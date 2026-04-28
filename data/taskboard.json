@@ -1,0 +1,2522 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Bootstrap OpenClaw",
+      "description": "Set up IDENTITY.md, USER.md, SOUL.md",
+      "status": "done",
+      "assignee": "NightCircle",
+      "createdAt": 1776817289000
+    },
+    {
+      "id": 2,
+      "title": "Build Mission Control Dashboard",
+      "description": "Next.js app with widgets and tabs",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776820889000,
+      "subtasks": [
+        {
+          "id": 201,
+          "title": "Set up Next.js project",
+          "description": "Initialize app with TypeScript and Tailwind",
+          "status": "done",
+          "assignee": "Engine",
+          "createdAt": 1776821889000
+        },
+        {
+          "id": 202,
+          "title": "Create tab navigation",
+          "description": "Dashboard, Calendar, Tasks, Team tabs",
+          "status": "done",
+          "assignee": "Engine",
+          "createdAt": 1776822889000
+        },
+        {
+          "id": 203,
+          "title": "Build widget components",
+          "description": "Weather, calendar, quick actions widgets",
+          "status": "done",
+          "assignee": "Engine",
+          "createdAt": 1776823889000
+        },
+        {
+          "id": 204,
+          "title": "Style with Linear aesthetic",
+          "description": "Dark theme, clean typography, smooth animations",
+          "status": "done",
+          "assignee": "Engine",
+          "createdAt": 1776824889000
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Build Taskboard System",
+      "description": "Kanban board with drag-and-drop",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776824489000,
+      "subtasks": [
+        {
+          "id": 301,
+          "title": "Design kanban layout",
+          "description": "Create column structure for Backlog, In Progress, Done, Review",
+          "status": "done",
+          "assignee": "Engine",
+          "createdAt": 1776825489000
+        },
+        {
+          "id": 302,
+          "title": "Implement drag-and-drop",
+          "description": "Add mouse/touch event handlers for task movement",
+          "status": "done",
+          "assignee": "Engine",
+          "createdAt": 1776826489000
+        },
+        {
+          "id": 303,
+          "title": "Add activity feed",
+          "description": "Real-time sidebar showing task updates",
+          "status": "done",
+          "assignee": "Engine",
+          "createdAt": 1776827489000
+        },
+        {
+          "id": 304,
+          "title": "Support subtasks",
+          "description": "Enable task breakdown with expandable child tasks",
+          "status": "in-progress",
+          "assignee": "Engine",
+          "createdAt": 1776828489000
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Build Calendar View",
+      "description": "Monthly calendar with recurring events",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776828089000
+    },
+    {
+      "id": 5,
+      "title": "Deploy AI Dream Team",
+      "description": "6 specialized agents + orchestrator",
+      "status": "done",
+      "assignee": "NightCircle",
+      "createdAt": 1776831689000
+    },
+    {
+      "id": 6,
+      "title": "Add Beacon Agent",
+      "description": "Nonprofit strategy specialist",
+      "status": "done",
+      "assignee": "NightCircle",
+      "createdAt": 1776835289000
+    },
+    {
+      "id": 7,
+      "title": "Set Up Daily Briefing",
+      "description": "8am EST automated briefing via Telegram",
+      "status": "done",
+      "assignee": "Signal",
+      "createdAt": 1776838889000
+    },
+    {
+      "id": 8,
+      "title": "Configure Remote Access",
+      "description": "ngrok tunnel for mobile access",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776842489000
+    },
+    {
+      "id": 9,
+      "title": "Fix Tab Navigation",
+      "description": "Single-page dashboard with tab switching",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776846089000
+    },
+    {
+      "id": 10,
+      "title": "Add Live Activity Feed",
+      "description": "Real-time task updates sidebar",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776849689000
+    },
+    {
+      "id": 11,
+      "title": "Implement Quick Actions",
+      "description": "New Note, Email, Calendar modals",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776853289000
+    },
+    {
+      "id": 12,
+      "title": "Connect Weather API",
+      "description": "Live weather data from wttr.in",
+      "status": "done",
+      "assignee": "Signal",
+      "createdAt": 1776856889000
+    },
+    {
+      "id": 13,
+      "title": "Integrate Real News Feed",
+      "description": "RSS API integration for news widgets",
+      "status": "done",
+      "assignee": "Signal",
+      "createdAt": 1776860489000,
+      "updatedAt": 1776903691673,
+      "completedAt": 1776903691673
+    },
+    {
+      "id": 14,
+      "title": "Build Analytics Dashboard",
+      "description": "Task completion metrics and charts",
+      "status": "done",
+      "assignee": "Vector",
+      "createdAt": 1776864089000
+    },
+    {
+      "id": 15,
+      "title": "Add Task Creation UI",
+      "description": "Form to create new tasks from Taskboard",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776867689000,
+      "updatedAt": 1776903811825,
+      "completedAt": 1776903811825
+    },
+    {
+      "id": 16,
+      "title": "Implement Drag-and-Drop",
+      "description": "Move tasks between columns by dragging",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776871289000,
+      "updatedAt": 1776903711486,
+      "completedAt": 1776903711486
+    },
+    {
+      "id": 17,
+      "title": "Set Up Discord Integration",
+      "description": "Enable Discord as secondary channel",
+      "status": "done",
+      "assignee": "Anchor",
+      "createdAt": 1776874889000
+    },
+    {
+      "id": 18,
+      "title": "Create Settings Panel",
+      "description": "User preferences and configuration",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776878489000
+    },
+    {
+      "id": 19,
+      "title": "Optimize NAS Sync",
+      "description": "Reduce sync interval impact on performance",
+      "status": "done",
+      "assignee": "Vector",
+      "createdAt": 1776882089000
+    },
+    {
+      "id": 20,
+      "title": "Add Mobile Responsive Design",
+      "description": "Ensure dashboard works on phones",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776885689000
+    },
+    {
+      "id": 21,
+      "title": "Add Email Notifications",
+      "description": "Send email alerts for important tasks",
+      "status": "done",
+      "assignee": "Signal",
+      "createdAt": 1776889289000,
+      "updatedAt": 1776903731482,
+      "completedAt": 1776903731483
+    },
+    {
+      "id": 22,
+      "title": "Build API Documentation",
+      "description": "Document all Mission Control APIs",
+      "status": "done",
+      "assignee": "Vector",
+      "createdAt": 1776892889000,
+      "updatedAt": 1776903691673,
+      "completedAt": 1776903691673
+    },
+    {
+      "id": 23,
+      "title": "Implement Search Function",
+      "description": "Search across tasks, notes, and activities",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776896489000,
+      "updatedAt": 1776903701559,
+      "completedAt": 1776903701559
+    },
+    {
+      "id": 24,
+      "title": "Add Dark/Light Theme Toggle",
+      "description": "User-selectable theme options",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776900089000,
+      "updatedAt": 1776903711486,
+      "completedAt": 1776903711486
+    },
+    {
+      "id": 25,
+      "title": "Create Onboarding Flow",
+      "description": "First-time user setup wizard",
+      "status": "done",
+      "assignee": "Beacon",
+      "createdAt": 1776903689000,
+      "updatedAt": 1776903701559,
+      "completedAt": 1776903701559
+    },
+    {
+      "id": 26,
+      "title": "Integrate Voice Commands",
+      "description": "Voice-to-text for task creation",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776903689000,
+      "updatedAt": 1776903721502,
+      "completedAt": 1776903721502
+    },
+    {
+      "id": 27,
+      "title": "Build Reporting Module",
+      "description": "Weekly/monthly productivity reports",
+      "status": "done",
+      "assignee": "Vector",
+      "createdAt": 1776903689000,
+      "updatedAt": 1776903741527,
+      "completedAt": 1776903741527
+    },
+    {
+      "id": 28,
+      "title": "Add Keyboard Shortcuts",
+      "description": "Power user shortcuts for common actions",
+      "status": "done",
+      "assignee": "Engine",
+      "createdAt": 1776903689000,
+      "updatedAt": 1776903711486,
+      "completedAt": 1776903711486
+    },
+    {
+      "id": 29,
+      "title": "Implement Task Templates",
+      "description": "Reusable task templates for common workflows",
+      "status": "done",
+      "assignee": "Anchor",
+      "createdAt": 1776903689000,
+      "updatedAt": 1776903691673,
+      "completedAt": 1776903691673
+    },
+    {
+      "id": 30,
+      "title": "Add Time Tracking",
+      "description": "Track time spent on each task",
+      "status": "done",
+      "assignee": "Vector",
+      "createdAt": 1776903689000,
+      "updatedAt": 1776903701559,
+      "completedAt": 1776903701559
+    },
+    {
+      "id": 31,
+      "title": "Daily Job Search - Day 1",
+      "description": "Find 5-10 relevant job opportunities",
+      "status": "done",
+      "assignee": "Pathfinder",
+      "createdAt": 1776905157000,
+      "updatedAt": 1776905161616,
+      "completedAt": 1776905161616
+    },
+    {
+      "id": 32,
+      "title": "Setup Application Tracking Spreadsheet",
+      "description": "Create spreadsheet with all required columns for job tracking",
+      "status": "done",
+      "assignee": "Closer",
+      "createdAt": 1776905157000,
+      "updatedAt": 1776905221619,
+      "completedAt": 1776905221619
+    },
+    {
+      "id": 33,
+      "title": "Resume Template Optimization",
+      "description": "Create adaptable resume templates for different role types",
+      "status": "done",
+      "assignee": "Closer",
+      "createdAt": 1776905157000,
+      "updatedAt": 1776905161616,
+      "completedAt": 1776905161616
+    },
+    {
+      "id": 34,
+      "title": "Design Social Media Brand Kit",
+      "description": "Create cohesive visual identity for social platforms",
+      "status": "done",
+      "assignee": "Pulse",
+      "createdAt": 1776905561000,
+      "updatedAt": 1776905571695,
+      "completedAt": 1776905571695
+    },
+    {
+      "id": 35,
+      "title": "Setup Media Sources Configuration",
+      "description": "Configure trusted sources for media discovery",
+      "status": "done",
+      "assignee": "Vault",
+      "createdAt": 1776910502000,
+      "updatedAt": 1776910532569,
+      "completedAt": 1776910532569
+    },
+    {
+      "id": 36,
+      "title": "Define Security Validation Rules",
+      "description": "Create Sentinel security policies and threat detection rules",
+      "status": "done",
+      "assignee": "Sentinel",
+      "createdAt": 1776910502000,
+      "updatedAt": 1776910512498,
+      "completedAt": 1776910512498,
+      "projectId": 4
+    },
+    {
+      "id": 37,
+      "title": "Test Media Download Workflow",
+      "description": "End-to-end test: Vault \u2192 Sentinel \u2192 Approval \u2192 Download",
+      "status": "done",
+      "assignee": "Vault",
+      "createdAt": 1776910502000,
+      "updatedAt": 1776910522589,
+      "completedAt": 1776910522589
+    },
+    {
+      "id": 38,
+      "title": "Install NordVPN CLI",
+      "description": "Setup trusted VPN servers and connection profiles",
+      "status": "done",
+      "assignee": "Cipher",
+      "createdAt": 1776911399000,
+      "updatedAt": 1776911422643,
+      "completedAt": 1776911422643,
+      "projectId": 4
+    },
+    {
+      "id": 39,
+      "title": "Enable NordVPN Kill Switch",
+      "description": "Block all traffic if VPN disconnects",
+      "status": "done",
+      "assignee": "Cipher",
+      "createdAt": 1776911399000,
+      "updatedAt": 1776911452647,
+      "completedAt": 1776911452647,
+      "projectId": 4
+    },
+    {
+      "id": 1776915000000,
+      "title": "Add API integrations for daily briefing",
+      "description": "Configure Brave Search, NASA, ESPN, and SpaceX APIs for live data in briefings",
+      "status": "done",
+      "assignee": "Signal",
+      "priority": "high",
+      "createdAt": 1776911400000,
+      "completedAt": 1776912000000,
+      "source": "telegram"
+    },
+    {
+      "id": 1776915000001,
+      "title": "Update location to Asheville, NC",
+      "description": "Change weather and briefing location from New York to Asheville",
+      "status": "done",
+      "assignee": "NightCircle",
+      "priority": "normal",
+      "createdAt": 1776913500000,
+      "completedAt": 1776913800000,
+      "source": "telegram"
+    },
+    {
+      "id": 1776915000002,
+      "title": "Improve task tracking features",
+      "description": "Add better metrics, progress bars, and completion rates to task tracking",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "high",
+      "createdAt": 1776914400000,
+      "completedAt": 1776914700000,
+      "source": "telegram"
+    },
+    {
+      "id": 1776915000003,
+      "title": "Build all tab views (Calendar, Tasks, Team, News)",
+      "description": "Create full implementations for all dashboard tabs with mobile optimization",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "high",
+      "createdAt": 1776914800000,
+      "completedAt": 1776915200000,
+      "source": "telegram"
+    },
+    {
+      "id": 1776915000004,
+      "title": "Add task creation modal",
+      "description": "Create UI for adding new tasks with title, description, assignee, priority, due date",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "high",
+      "createdAt": 1776915400000,
+      "completedAt": 1776915600000,
+      "source": "telegram"
+    },
+    {
+      "id": 1776915000005,
+      "title": "Implement drag-and-drop kanban board",
+      "description": "Allow dragging tasks between Todo, In Progress, Review, Done columns",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "high",
+      "createdAt": 1776915400000,
+      "completedAt": 1776915600000,
+      "source": "telegram"
+    },
+    {
+      "id": 1776915000006,
+      "title": "Add time tracking for tasks",
+      "description": "Auto-start timer when task moves to In Progress, show elapsed time on cards",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "high",
+      "createdAt": 1776915400000,
+      "completedAt": 1776915600000,
+      "source": "telegram"
+    },
+    {
+      "id": 1776915000007,
+      "title": "Implement Telegram task auto-capture",
+      "description": "Automatically create tasks in taskboard when user gives tasks via Telegram",
+      "status": "done",
+      "assignee": "NightCircle",
+      "priority": "high",
+      "createdAt": 1776916560000,
+      "source": "telegram",
+      "updatedAt": 1776952749740,
+      "completedAt": 1776952749740
+    },
+    {
+      "id": 1776956135566,
+      "title": "Build Memory tab in Mission Control",
+      "description": "Create Memory tab with daily memories (organized by date) and long-term memory (MEMORY.md) views",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "high",
+      "createdAt": 1776956135566,
+      "source": "telegram",
+      "updatedAt": 1776956189785,
+      "completedAt": 1776956189785
+    },
+    {
+      "id": 1776956689576,
+      "title": "Build Docs tab in Mission Control",
+      "description": "Create searchable Docs tab with categorized document library (agents, skills, configs, etc.)",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "high",
+      "createdAt": 1776956689576,
+      "source": "telegram",
+      "updatedAt": 1776956699863,
+      "completedAt": 1776956699863
+    },
+    {
+      "id": 1776957772148,
+      "title": "Build Projects tab with Signal analysis workflow",
+      "description": "Complete project management system with Signal research phase, agent assignment workflow, task breakdown, progress tracking, and document management",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "high",
+      "createdAt": 1776957772148,
+      "source": "telegram",
+      "updatedAt": 1776957840075,
+      "completedAt": 1776957840075
+    },
+    {
+      "id": 1776959006242.4626,
+      "title": "Add PWA manifest with icons",
+      "description": "PWA Project Phase 1 - Add PWA manifest with icons",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "critical",
+      "due": null,
+      "createdAt": 1776959006242,
+      "startedAt": 1776959006242,
+      "source": "project",
+      "projectId": 1776958533367,
+      "timeSpent": 0,
+      "updatedAt": 1776959040266,
+      "completedAt": 1776959040266
+    },
+    {
+      "id": 1776959006242.074,
+      "title": "Create app icons (512px, 192px)",
+      "description": "PWA Project Phase 1 - Create app icons (512px, 192px)",
+      "status": "done",
+      "assignee": "Pulse",
+      "priority": "critical",
+      "due": null,
+      "createdAt": 1776959006242,
+      "startedAt": 1776959006242,
+      "source": "project",
+      "projectId": 1776958533367,
+      "timeSpent": 0,
+      "updatedAt": 1776959020274,
+      "completedAt": 1776959020274
+    },
+    {
+      "id": 1776959445537.5254,
+      "title": "Implement service worker",
+      "description": "PWA Project - Phase 1 - PWA Core: Implement service worker",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "critical",
+      "due": null,
+      "createdAt": 1776959445537,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 2,
+      "timeSpent": 0,
+      "startedAt": 1776960040031,
+      "updatedAt": 1776963854686,
+      "progress": 100,
+      "estimatedTotal": 45,
+      "timeWorking": 63,
+      "completedAt": 1776964876076
+    },
+    {
+      "id": 1776959445537.7932,
+      "title": "Add offline support",
+      "description": "PWA Project - Phase 1 - PWA Core: Add offline support",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "high",
+      "due": null,
+      "createdAt": 1776959445537,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 4,
+      "timeSpent": 0,
+      "startedAt": 1776971164461,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776973789047,
+      "completedAt": "2026-04-23T19:51:08.792Z"
+    },
+    {
+      "id": 1776959445537.503,
+      "title": "Install prompt UI",
+      "description": "PWA Project - Phase 1 - PWA Core: Install prompt UI",
+      "status": "done",
+      "assignee": "Pulse",
+      "priority": "high",
+      "due": null,
+      "createdAt": 1776959445537,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 5,
+      "timeSpent": 0,
+      "startedAt": 1776960040031,
+      "updatedAt": 1776963854686,
+      "progress": 100,
+      "estimatedTotal": 45,
+      "timeWorking": 63,
+      "completedAt": 1776964876076
+    },
+    {
+      "id": 1776959445537.5623,
+      "title": "Setup OneSignal account",
+      "description": "PWA Project - Phase 2 - Notifications: Setup OneSignal account",
+      "status": "done",
+      "assignee": "Signal",
+      "priority": "critical",
+      "due": null,
+      "createdAt": 1776959445537,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 6,
+      "timeSpent": 0,
+      "startedAt": 1776960040031,
+      "updatedAt": 1776963854686,
+      "progress": 100,
+      "estimatedTotal": 45,
+      "timeWorking": 63,
+      "completedAt": 1776964876076
+    },
+    {
+      "id": 1776959445537.4824,
+      "title": "Integrate OneSignal SDK",
+      "description": "PWA Project - Phase 2 - Notifications: Integrate OneSignal SDK",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "critical",
+      "due": null,
+      "createdAt": 1776959445537,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 7,
+      "timeSpent": 0,
+      "startedAt": 1776965614161,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776968225435,
+      "completedAt": "2026-04-23T18:19:37.337Z"
+    },
+    {
+      "id": 1776959445537.0005,
+      "title": "Notification permission request",
+      "description": "PWA Project - Phase 2 - Notifications: Notification permission request",
+      "status": "done",
+      "assignee": "Pulse",
+      "priority": "high",
+      "due": null,
+      "createdAt": 1776959445537,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 8,
+      "timeSpent": 0,
+      "startedAt": 1776965614161,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776968225435,
+      "completedAt": "2026-04-23T18:19:37.337Z"
+    },
+    {
+      "id": 1776959445538.7769,
+      "title": "Daily Briefing notification template",
+      "description": "PWA Project - Phase 2 - Notifications: Daily Briefing notification template",
+      "status": "done",
+      "assignee": "Signal",
+      "priority": "critical",
+      "due": null,
+      "createdAt": 1776959445538,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 9,
+      "timeSpent": 0,
+      "startedAt": 1776965614161,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776968225435,
+      "completedAt": "2026-04-23T18:19:37.337Z"
+    },
+    {
+      "id": 1776959445538.8262,
+      "title": "Task completion notification template",
+      "description": "PWA Project - Phase 2 - Notifications: Task completion notification template",
+      "status": "done",
+      "assignee": "Signal",
+      "priority": "critical",
+      "due": null,
+      "createdAt": 1776959445538,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 10,
+      "timeSpent": 0,
+      "startedAt": 1776968377338,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776971006921,
+      "completedAt": "2026-04-23T19:06:04.460Z"
+    },
+    {
+      "id": 1776959445538.3252,
+      "title": "Test notification delivery",
+      "description": "PWA Project - Phase 2 - Notifications: Test notification delivery",
+      "status": "done",
+      "assignee": "Vector",
+      "priority": "high",
+      "due": null,
+      "createdAt": 1776959445538,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 11,
+      "timeSpent": 0,
+      "startedAt": 1776963613460,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776966230558,
+      "completedAt": "2026-04-23T18:19:37.337Z"
+    },
+    {
+      "id": 1776959445538.249,
+      "title": "Telegram auto-reply with app link",
+      "description": "PWA Project - Phase 3 - Telegram: Telegram auto-reply with app link",
+      "status": "done",
+      "assignee": "NightCircle",
+      "priority": "critical",
+      "due": null,
+      "createdAt": 1776959445538,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 12,
+      "timeSpent": 0,
+      "startedAt": 1776963613460,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776966230558,
+      "completedAt": "2026-04-23T18:19:37.338Z"
+    },
+    {
+      "id": 1776959445538.0725,
+      "title": "Deep linking to tasks/projects",
+      "description": "PWA Project - Phase 3 - Telegram: Deep linking to tasks/projects",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "high",
+      "due": null,
+      "createdAt": 1776959445538,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 13,
+      "timeSpent": 0,
+      "startedAt": 1776973868793,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776976508521,
+      "completedAt": "2026-04-23T20:36:12.798Z"
+    },
+    {
+      "id": 1776959445538.2969,
+      "title": "Configure notification preferences",
+      "description": "PWA Project - Phase 3 - Telegram: Configure notification preferences",
+      "status": "done",
+      "assignee": "Pulse",
+      "priority": "medium",
+      "due": null,
+      "createdAt": 1776959445538,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 14,
+      "timeSpent": 0,
+      "startedAt": 1776971164461,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776973789047,
+      "completedAt": "2026-04-23T19:51:08.793Z"
+    },
+    {
+      "id": 1776959445538.47,
+      "title": "Test on iOS Safari",
+      "description": "PWA Project - Phase 4 - Launch: Test on iOS Safari",
+      "status": "done",
+      "assignee": "Vector",
+      "priority": "critical",
+      "due": null,
+      "createdAt": 1776959445538,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 15,
+      "timeSpent": 0,
+      "startedAt": 1776968377338,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776971006921,
+      "completedAt": "2026-04-23T19:06:04.460Z"
+    },
+    {
+      "id": 1776959445538.2163,
+      "title": "Test on Android Chrome",
+      "description": "PWA Project - Phase 4 - Launch: Test on Android Chrome",
+      "status": "done",
+      "assignee": "Vector",
+      "priority": "critical",
+      "due": null,
+      "createdAt": 1776959445538,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 16,
+      "timeSpent": 0,
+      "startedAt": 1776971164461,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776973789047,
+      "completedAt": "2026-04-23T19:51:08.793Z"
+    },
+    {
+      "id": 1776959445538.9006,
+      "title": "Fix critical bugs",
+      "description": "PWA Project - Phase 4 - Launch: Fix critical bugs",
+      "status": "done",
+      "assignee": "Engine",
+      "priority": "critical",
+      "due": null,
+      "createdAt": 1776959445538,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 17,
+      "timeSpent": 0,
+      "startedAt": 1776968377338,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776971006921,
+      "completedAt": "2026-04-23T19:06:04.460Z"
+    },
+    {
+      "id": 1776959445538.587,
+      "title": "Launch to production",
+      "description": "PWA Project - Phase 4 - Launch: Launch to production",
+      "status": "done",
+      "assignee": "NightCircle",
+      "priority": "critical",
+      "due": null,
+      "createdAt": 1776959445538,
+      "source": "project",
+      "projectId": 1776958533367,
+      "projectTaskId": 18,
+      "timeSpent": 0,
+      "startedAt": 1776968377338,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776971006921,
+      "completedAt": "2026-04-23T19:06:04.460Z"
+    },
+    {
+      "id": 1776962104775.0596,
+      "title": "Configure Brave Search API",
+      "description": "Daily Briefing Project - Configure Brave Search API",
+      "status": "done",
+      "assignee": "Signal",
+      "priority": "normal",
+      "due": null,
+      "createdAt": 1776875704775,
+      "source": "project",
+      "projectId": 2,
+      "timeSpent": 30,
+      "completedAt": 1776958504775
+    },
+    {
+      "id": 1776962104775.3674,
+      "title": "Setup NASA API",
+      "description": "Daily Briefing Project - Setup NASA API",
+      "status": "done",
+      "assignee": "Signal",
+      "priority": "normal",
+      "due": null,
+      "createdAt": 1776875704775,
+      "source": "project",
+      "projectId": 2,
+      "timeSpent": 30,
+      "completedAt": 1776958504775
+    },
+    {
+      "id": 1776962104775.3386,
+      "title": "Integrate ESPN API",
+      "description": "Daily Briefing Project - Integrate ESPN API",
+      "status": "done",
+      "assignee": "Signal",
+      "priority": "normal",
+      "due": null,
+      "createdAt": 1776875704775,
+      "source": "project",
+      "projectId": 2,
+      "timeSpent": 30,
+      "completedAt": 1776958504775
+    },
+    {
+      "id": 1776962104775.6887,
+      "title": "Add SpaceX API",
+      "description": "Daily Briefing Project - Add SpaceX API",
+      "status": "done",
+      "assignee": "Signal",
+      "priority": "normal",
+      "due": null,
+      "createdAt": 1776875704775,
+      "source": "project",
+      "projectId": 2,
+      "timeSpent": 30,
+      "completedAt": 1776958504775
+    },
+    {
+      "id": 1776962104775.5835,
+      "title": "Format for mobile delivery",
+      "description": "Daily Briefing Project - Format for mobile delivery",
+      "status": "done",
+      "assignee": "Signal",
+      "priority": "normal",
+      "due": null,
+      "createdAt": 1776875704775,
+      "source": "project",
+      "projectId": 2,
+      "timeSpent": 30,
+      "completedAt": 1776958504775
+    },
+    {
+      "id": 1776962104775.9668,
+      "title": "Schedule 8am delivery",
+      "description": "Daily Briefing Project - Schedule 8am delivery",
+      "status": "done",
+      "assignee": "Signal",
+      "priority": "normal",
+      "due": null,
+      "createdAt": 1776875704775,
+      "source": "project",
+      "projectId": 2,
+      "timeSpent": 30,
+      "completedAt": 1776958504775
+    },
+    {
+      "id": 1776962104775.572,
+      "title": "Test end-to-end",
+      "description": "Daily Briefing Project - Test end-to-end",
+      "status": "done",
+      "assignee": "Signal",
+      "priority": "high",
+      "due": null,
+      "createdAt": 1776962104775,
+      "source": "project",
+      "projectId": 2,
+      "timeSpent": 0,
+      "startedAt": 1776960304775,
+      "progress": 100,
+      "timeWorking": 59,
+      "updatedAt": 1776963854686,
+      "completedAt": 1776964876076
+    },
+    {
+      "id": 1776962104775.1082,
+      "title": "Design mobile layouts",
+      "description": "Mobile Optimization Project - Design mobile layouts",
+      "status": "done",
+      "assignee": "Pulse",
+      "priority": "normal",
+      "due": null,
+      "createdAt": 1776789304775,
+      "source": "project",
+      "projectId": 3,
+      "timeSpent": 45,
+      "completedAt": 1776954904775
+    },
+    {
+      "id": 1776962104775.9495,
+      "title": "Implement bottom navigation",
+      "description": "Mobile Optimization Project - Implement bottom navigation",
+      "status": "done",
+      "assignee": "Pulse",
+      "priority": "normal",
+      "due": null,
+      "createdAt": 1776789304775,
+      "source": "project",
+      "projectId": 3,
+      "timeSpent": 45,
+      "completedAt": 1776954904775
+    },
+    {
+      "id": 1776962104775.9844,
+      "title": "Optimize touch targets",
+      "description": "Mobile Optimization Project - Optimize touch targets",
+      "status": "done",
+      "assignee": "Pulse",
+      "priority": "normal",
+      "due": null,
+      "createdAt": 1776789304775,
+      "source": "project",
+      "projectId": 3,
+      "timeSpent": 45,
+      "completedAt": 1776954904775
+    },
+    {
+      "id": 1776962104775.1094,
+      "title": "Test on iOS/Android",
+      "description": "Mobile Optimization Project - Test on iOS/Android",
+      "status": "done",
+      "assignee": "Pulse",
+      "priority": "high",
+      "due": null,
+      "createdAt": 1776875704775,
+      "source": "project",
+      "projectId": 3,
+      "timeSpent": 0,
+      "startedAt": 1776960304775,
+      "progress": 100,
+      "timeWorking": 59,
+      "updatedAt": 1776963854686,
+      "completedAt": 1776964876076
+    },
+    {
+      "id": 1776962104775.4077,
+      "title": "Performance optimization",
+      "description": "Mobile Optimization Project - Performance optimization",
+      "status": "done",
+      "assignee": "Pulse",
+      "priority": "high",
+      "due": null,
+      "createdAt": 1776875704775,
+      "source": "project",
+      "projectId": 3,
+      "timeSpent": 0,
+      "startedAt": 1776968377338,
+      "progress": 100,
+      "timeWorking": 43,
+      "updatedAt": 1776971006921,
+      "completedAt": "2026-04-23T19:06:04.460Z"
+    },
+    {
+      "id": 1776975076734.5054,
+      "title": "Configure NordVPN auto-connect",
+      "description": "Auto-connect VPN on system startup",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Cipher",
+      "projectId": 4,
+      "createdAt": 1776975076734,
+      "progress": 100,
+      "dependencies": [],
+      "startedAt": 1776977774668,
+      "timeWorking": 43,
+      "updatedAt": 1776980376629,
+      "completedAt": "2026-04-23T21:41:18.446Z"
+    },
+    {
+      "id": 1776975076734.2773,
+      "title": "Setup VPN routing rules",
+      "description": "Define which apps must use VPN",
+      "status": "done",
+      "priority": "medium",
+      "assignee": "Cipher",
+      "projectId": 4,
+      "createdAt": 1776975076734,
+      "progress": 100,
+      "dependencies": [],
+      "startedAt": 1776980478447,
+      "timeWorking": 43,
+      "updatedAt": 1776983098824,
+      "completedAt": "2026-04-23T22:26:22.528Z"
+    },
+    {
+      "id": 1776975076734.6484,
+      "title": "Test VPN kill switch",
+      "description": "Verify traffic blocks when VPN drops",
+      "status": "done",
+      "priority": "critical",
+      "assignee": "Cipher",
+      "projectId": 4,
+      "createdAt": 1776975076734,
+      "progress": 100,
+      "dependencies": [],
+      "startedAt": 1776975086467,
+      "timeWorking": 43,
+      "updatedAt": 1776977716765,
+      "completedAt": "2026-04-23T20:56:14.668Z"
+    },
+    {
+      "id": 1776975076734.3389,
+      "title": "Create file scanning workflow",
+      "description": "Automated security scanning for downloads",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Sentinel",
+      "projectId": 4,
+      "createdAt": 1776975076734,
+      "progress": 100,
+      "dependencies": [],
+      "startedAt": 1776975086467,
+      "timeWorking": 43,
+      "updatedAt": 1776977716765,
+      "completedAt": "2026-04-23T20:56:14.668Z"
+    },
+    {
+      "id": 1776975076734.3025,
+      "title": "Define threat detection rules",
+      "description": "Rules for identifying malicious files",
+      "status": "done",
+      "priority": "medium",
+      "assignee": "Sentinel",
+      "projectId": 4,
+      "createdAt": 1776975076734,
+      "progress": 100,
+      "dependencies": [],
+      "startedAt": 1776977774668,
+      "timeWorking": 43,
+      "updatedAt": 1776980376629,
+      "completedAt": "2026-04-23T21:41:18.446Z"
+    },
+    {
+      "id": 1776975076734.4817,
+      "title": "Setup quarantine system",
+      "description": "Isolate suspicious files automatically",
+      "status": "done",
+      "priority": "medium",
+      "assignee": "Sentinel",
+      "projectId": 4,
+      "createdAt": 1776975076734,
+      "progress": 100,
+      "dependencies": [],
+      "startedAt": 1776980478447,
+      "timeWorking": 43,
+      "updatedAt": 1776983098824,
+      "completedAt": "2026-04-23T22:26:22.528Z"
+    },
+    {
+      "id": "tu-001",
+      "title": "Review organizational structure and governance",
+      "description": "Analyze current board structure, roles, responsibilities, and decision-making processes",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "startedAt": "2026-04-24T01:27:32.349Z",
+      "timeWorking": 534,
+      "updatedAt": 1777026104282,
+      "completedAt": "2026-04-24T10:22:43.338Z"
+    },
+    {
+      "id": "tu-002",
+      "title": "Review existing programs and initiatives",
+      "description": "Document all 4 core programs: Family Support, Financial Assistance, Scholarship Fund, Awareness & Advocacy",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "startedAt": "2026-04-24T01:27:32.349Z",
+      "timeWorking": 534,
+      "updatedAt": 1777026104282,
+      "completedAt": "2026-04-24T10:22:43.339Z"
+    },
+    {
+      "id": "tu-003",
+      "title": "Create master tracking spreadsheet",
+      "description": "Build comprehensive spreadsheet for sponsors, grants, partners, and outreach tracking",
+      "status": "done",
+      "priority": "critical",
+      "assignee": "Vector",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "startedAt": "2026-04-24T01:27:32.349Z",
+      "timeWorking": 534,
+      "updatedAt": 1777026104282,
+      "completedAt": "2026-04-24T10:22:43.339Z"
+    },
+    {
+      "id": "tu-004",
+      "title": "Create Bronze sponsorship package",
+      "description": "Define pricing, benefits, audience reach, and impact metrics for Bronze tier",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "startedAt": "2026-04-24T01:27:32.349Z",
+      "timeWorking": 534,
+      "updatedAt": 1777026104282,
+      "completedAt": "2026-04-24T10:22:43.339Z"
+    },
+    {
+      "id": "tu-005",
+      "title": "Create Silver sponsorship package",
+      "description": "Define pricing, benefits, audience reach, and impact metrics for Silver tier",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "startedAt": 1777026163339,
+      "timeWorking": 43,
+      "updatedAt": 1777028770688,
+      "completedAt": "2026-04-24T11:09:25.784Z"
+    },
+    {
+      "id": "tu-006",
+      "title": "Create Gold sponsorship package",
+      "description": "Define pricing, benefits, audience reach, and impact metrics for Gold tier",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "startedAt": 1777028965785,
+      "timeWorking": 43,
+      "updatedAt": 1777031557199,
+      "completedAt": "2026-04-24T11:56:05.927Z"
+    },
+    {
+      "id": "tu-007",
+      "title": "Create Title sponsorship package",
+      "description": "Define pricing, benefits, audience reach, and impact metrics for Title/Premium tier",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "startedAt": 1777031765928,
+      "timeWorking": 145,
+      "updatedAt": 1777040491414,
+      "completedAt": "2026-04-24T14:21:41.368Z"
+    },
+    {
+      "id": "tu-008",
+      "title": "Create sponsorship proposal template",
+      "description": "Build customizable proposal deck for outreach to potential sponsors",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-009",
+      "title": "Research and identify 100+ grant opportunities",
+      "description": "Build database of grants with name, link, deadline, funding amount, and status",
+      "status": "done",
+      "priority": "critical",
+      "assignee": "Vector",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "startedAt": "2026-04-24T01:27:32.349Z",
+      "timeWorking": 534,
+      "updatedAt": 1777026104282,
+      "completedAt": "2026-04-24T10:22:43.339Z"
+    },
+    {
+      "id": "tu-010",
+      "title": "Prioritize top 20 grant opportunities",
+      "description": "Rank grants by fit, funding amount, deadline, and likelihood of success",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "startedAt": 1777040501368,
+      "timeWorking": 189,
+      "updatedAt": 1777041970361,
+      "completedAt": "2026-04-24T17:41:00.414Z"
+    },
+    {
+      "id": "tu-011",
+      "title": "Create grant application timeline",
+      "description": "Build calendar with deadlines and submission requirements for prioritized grants",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-012",
+      "title": "Define board roles and responsibilities",
+      "description": "Document Chair, Treasurer, Secretary, Program Director roles with expectations",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "startedAt": 1777052460415,
+      "timeWorking": 177,
+      "completeRequested": true,
+      "completedAt": "2026-04-24T20:48:19.067Z"
+    },
+    {
+      "id": "tu-013",
+      "title": "Create board recruitment letter",
+      "description": "Write compelling recruitment letter for potential board members",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-014",
+      "title": "Create board interest form",
+      "description": "Build application/interest form for prospective board members",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-015",
+      "title": "Define Marketing intern role",
+      "description": "Create job description, weekly tasks, and learning outcomes for Marketing intern",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-016",
+      "title": "Define Operations intern role",
+      "description": "Create job description, weekly tasks, and learning outcomes for Operations intern",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-017",
+      "title": "Define Partnerships intern role",
+      "description": "Create job description, weekly tasks, and learning outcomes for Partnerships intern",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-018",
+      "title": "Create internship program handbook",
+      "description": "Compile all intern roles, policies, and procedures into comprehensive handbook",
+      "status": "todo",
+      "priority": "low",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-019",
+      "title": "Build repeatable event model",
+      "description": "Create template for events including budget, sponsorship integration, revenue plan",
+      "status": "in-progress",
+      "priority": "high",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "startedAt": "2026-04-24T20:48:19.067Z",
+      "timeWorking": 0
+    },
+    {
+      "id": "tu-020",
+      "title": "Design Field Day collaboration event",
+      "description": "Plan specific Field Day event as pilot for repeatable event model",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-021",
+      "title": "Create vendor outreach template",
+      "description": "Build email/templates for reaching out to event vendors and partners",
+      "status": "todo",
+      "priority": "low",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-022",
+      "title": "Create growth strategy roadmap",
+      "description": "Build 6-month roadmap targeting +30% funding and 10 new partners/quarter",
+      "status": "done",
+      "priority": "critical",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "startedAt": "2026-04-24T01:27:32.349Z",
+      "timeWorking": 534,
+      "updatedAt": 1777026104282,
+      "completedAt": "2026-04-24T10:22:43.339Z"
+    },
+    {
+      "id": "tu-023",
+      "title": "Identify 50+ corporate sponsor prospects",
+      "description": "Research and list corporate sponsors aligned with cancer support mission",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-024",
+      "title": "Create outreach email templates",
+      "description": "Build email templates for sponsors, grants, and partnership inquiries",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-025",
+      "title": "Build partnership proposal deck",
+      "description": "Create presentation deck for strategic partnership pitches",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "Beacon",
+      "projectId": "team-us-foundation",
+      "progress": 0,
+      "createdAt": "2026-04-24T01:27:27.145Z"
+    },
+    {
+      "id": "tu-026",
+      "title": "Website audit - messaging and homepage",
+      "description": "Review mission clarity, call-to-action, emotional storytelling (BLOCKED until site live)",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Signal",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "blocked": false,
+      "blockedReason": null,
+      "startedAt": "2026-04-24T11:23:58.672Z",
+      "timeWorking": 367,
+      "updatedAt": 1777041970361,
+      "completedAt": "2026-04-24T17:31:08.884Z"
+    },
+    {
+      "id": "tu-027",
+      "title": "Website audit - structure and navigation",
+      "description": "Review navigation clarity, page hierarchy, mobile responsiveness (BLOCKED until site live)",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Signal",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "blocked": false,
+      "blockedReason": null,
+      "startedAt": "2026-04-24T11:23:58.672Z",
+      "timeWorking": 367,
+      "updatedAt": 1777041970361,
+      "completedAt": "2026-04-24T17:31:08.885Z"
+    },
+    {
+      "id": "tu-028",
+      "title": "Website audit - conversion optimization",
+      "description": "Review donation flow, sponsorship inquiry, email capture (BLOCKED until site live)",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Signal",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "blocked": false,
+      "blockedReason": null,
+      "startedAt": "2026-04-24T11:23:58.672Z",
+      "timeWorking": 367,
+      "updatedAt": 1777041970361,
+      "completedAt": "2026-04-24T17:31:08.885Z"
+    },
+    {
+      "id": "tu-029",
+      "title": "Website audit - content and SEO",
+      "description": "Review program descriptions, impact metrics, testimonials, SEO keywords (BLOCKED until site live)",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Signal",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "blocked": false,
+      "blockedReason": null,
+      "startedAt": "2026-04-24T11:23:58.672Z",
+      "timeWorking": 367,
+      "updatedAt": 1777041970361,
+      "completedAt": "2026-04-24T17:31:08.885Z"
+    },
+    {
+      "id": "tu-030",
+      "title": "Create website optimization recommendations",
+      "description": "Compile audit findings with priority ranking and expected impact on funding/engagement (BLOCKED until site live)",
+      "status": "done",
+      "priority": "high",
+      "assignee": "Signal",
+      "projectId": "team-us-foundation",
+      "progress": 100,
+      "createdAt": "2026-04-24T01:27:27.145Z",
+      "blocked": false,
+      "blockedReason": null,
+      "startedAt": 1777052460414,
+      "timeWorking": 177,
+      "updatedAt": 1777013430346,
+      "completedAt": "2026-04-24T06:52:16.835Z",
+      "completeRequested": true
+    }
+  ],
+  "activities": [
+    {
+      "id": 1777063699067.4702,
+      "type": "task-completed",
+      "message": "Signal completed \"Create website optimization recommendations\" - Moving to next task",
+      "timestamp": 1777063699067
+    },
+    {
+      "id": 1777063699067.9092,
+      "type": "task-started",
+      "message": "Beacon started \"Build repeatable event model\"",
+      "timestamp": 1777063699067
+    },
+    {
+      "id": 1777063699067.1519,
+      "type": "task-completed",
+      "message": "Beacon completed \"Define board roles and responsibilities\" - Moving to next task",
+      "timestamp": 1777063699067
+    },
+    {
+      "id": 1777052460415.4827,
+      "type": "task-moved",
+      "message": "Anchor assigned Beacon to start \"Define board roles and responsibilities\"",
+      "timestamp": 1777052460415
+    },
+    {
+      "id": 1777052460414.9033,
+      "type": "task-moved",
+      "message": "Anchor assigned Signal to start \"Create website optimization recommendations\"",
+      "timestamp": 1777052460414
+    },
+    {
+      "id": 1777052460414.5283,
+      "type": "task-completed",
+      "message": "Audit approved \"Prioritize top 20 grant opportunities\" by Beacon - Quality verified!",
+      "timestamp": 1777052460414
+    },
+    {
+      "id": 1777051868885.6292,
+      "type": "task-completed",
+      "message": "Audit approved \"Website audit - content and SEO\" by Signal - Quality verified after 6 hours of work!",
+      "timestamp": 1777051868885
+    },
+    {
+      "id": 1777051868885.08,
+      "type": "task-completed",
+      "message": "Audit approved \"Website audit - conversion optimization\" by Signal - Quality verified after 6 hours of work!",
+      "timestamp": 1777051868885
+    },
+    {
+      "id": 1777051868885.913,
+      "type": "task-completed",
+      "message": "Audit approved \"Website audit - structure and navigation\" by Signal - Quality verified after 6 hours of work!",
+      "timestamp": 1777051868885
+    },
+    {
+      "id": 1777051868885.1135,
+      "type": "task-completed",
+      "message": "Audit approved \"Website audit - messaging and homepage\" by Signal - Quality verified after 6 hours of work!",
+      "timestamp": 1777051868885
+    },
+    {
+      "id": 1777040501368.7913,
+      "type": "task-moved",
+      "message": "Anchor assigned Beacon to start \"Prioritize top 20 grant opportunities\"",
+      "timestamp": 1777040501368
+    },
+    {
+      "id": 1777040501368.393,
+      "type": "task-completed",
+      "message": "Audit approved \"Create Title sponsorship package\" by Beacon - Quality verified!",
+      "timestamp": 1777040501368
+    },
+    {
+      "id": 1777031765928.8948,
+      "type": "task-moved",
+      "message": "Anchor assigned Beacon to start \"Create Title sponsorship package\"",
+      "timestamp": 1777031765928
+    },
+    {
+      "id": 1777031765927.4302,
+      "type": "task-completed",
+      "message": "Audit approved \"Create Gold sponsorship package\" by Beacon - Quality verified!",
+      "timestamp": 1777031765927
+    },
+    {
+      "id": 1777029838686,
+      "type": "work-started",
+      "message": "Signal started website audit for teamuscares.org - analyzing messaging, structure, conversion, and SEO",
+      "timestamp": 1777029838685
+    },
+    {
+      "id": 1777029831674,
+      "type": "tasks-unblocked",
+      "message": "\ud83c\udf10 Website audit unblocked - teamuscares.org is live! Signal can now begin website analysis.",
+      "timestamp": 1777029831674
+    },
+    {
+      "id": 1777028965785.4055,
+      "type": "task-moved",
+      "message": "Anchor assigned Beacon to start \"Create Gold sponsorship package\"",
+      "timestamp": 1777028965785
+    },
+    {
+      "id": 1777028965785.5786,
+      "type": "task-completed",
+      "message": "Audit approved \"Create Silver sponsorship package\" by Beacon - Quality verified!",
+      "timestamp": 1777028965785
+    },
+    {
+      "id": 1777026163339.326,
+      "type": "task-moved",
+      "message": "Anchor assigned Beacon to start \"Create Silver sponsorship package\"",
+      "timestamp": 1777026163339
+    },
+    {
+      "id": 1777026163339.4048,
+      "type": "task-completed",
+      "message": "Audit approved \"Create growth strategy roadmap\" by Beacon - Quality verified!",
+      "timestamp": 1777026163339
+    },
+    {
+      "id": 1777026163339.5967,
+      "type": "task-completed",
+      "message": "Audit approved \"Research and identify 100+ grant opportunities\" by Vector - Quality verified!",
+      "timestamp": 1777026163339
+    },
+    {
+      "id": 1777026163339.583,
+      "type": "task-completed",
+      "message": "Audit approved \"Create Bronze sponsorship package\" by Beacon - Quality verified!",
+      "timestamp": 1777026163339
+    },
+    {
+      "id": 1777026163339.808,
+      "type": "task-completed",
+      "message": "Audit approved \"Create master tracking spreadsheet\" by Vector - Quality verified!",
+      "timestamp": 1777026163339
+    },
+    {
+      "id": 1777026163339.7898,
+      "type": "task-completed",
+      "message": "Audit approved \"Review existing programs and initiatives\" by Beacon - Quality verified!",
+      "timestamp": 1777026163339
+    },
+    {
+      "id": 1777026163339.397,
+      "type": "task-completed",
+      "message": "Audit approved \"Review organizational structure and governance\" by Beacon - Quality verified!",
+      "timestamp": 1777026163339
+    },
+    {
+      "id": 1777013536835.6787,
+      "type": "task-completed",
+      "message": "Audit approved \"Create website optimization recommendations\" by Signal - Quality verified!",
+      "timestamp": 1777013536835
+    },
+    {
+      "id": 1777010831694.106,
+      "type": "task-moved",
+      "message": "Anchor assigned Signal to start \"Create website optimization recommendations\"",
+      "timestamp": 1777010831694
+    },
+    {
+      "id": 1777010831693.4795,
+      "type": "task-completed",
+      "message": "Audit approved \"Website audit - content and SEO\" by Signal - Quality verified!",
+      "timestamp": 1777010831693
+    },
+    {
+      "id": 1777008125122.181,
+      "type": "task-moved",
+      "message": "Anchor assigned Signal to start \"Website audit - content and SEO\"",
+      "timestamp": 1777008125122
+    },
+    {
+      "id": 1777008125121.773,
+      "type": "task-completed",
+      "message": "Audit approved \"Website audit - structure and navigation\" by Signal - Quality verified!",
+      "timestamp": 1777008125121
+    },
+    {
+      "id": 1777005419694.92,
+      "type": "task-moved",
+      "message": "Anchor assigned Signal to start \"Website audit - structure and navigation\"",
+      "timestamp": 1777005419694
+    },
+    {
+      "id": 1777005419693.9414,
+      "type": "task-completed",
+      "message": "Audit approved \"Website audit - messaging and homepage\" by Signal - Quality verified!",
+      "timestamp": 1777005419693
+    },
+    {
+      "id": 1777002714363.3804,
+      "type": "task-moved",
+      "message": "Anchor assigned Signal to start \"Website audit - messaging and homepage\"",
+      "timestamp": 1777002714363
+    },
+    {
+      "id": 1777002714362.5154,
+      "type": "task-completed",
+      "message": "Audit approved \"Website audit - conversion optimization\" by Signal - Quality verified!",
+      "timestamp": 1777002714362
+    },
+    {
+      "id": 1777000010637.9565,
+      "type": "task-moved",
+      "message": "Anchor assigned Signal to start \"Website audit - conversion optimization\"",
+      "timestamp": 1777000010637
+    },
+    {
+      "id": 1776997906966.685,
+      "type": "task-moved",
+      "message": "Anchor assigned Signal to start \"Website audit - messaging and homepage\"",
+      "timestamp": 1776997906966
+    },
+    {
+      "id": 1776997906965.9426,
+      "type": "task-completed",
+      "message": "Audit approved \"Website audit - conversion optimization\" by Signal - Quality verified!",
+      "timestamp": 1776997906965
+    },
+    {
+      "id": 1776995202628.5232,
+      "type": "task-moved",
+      "message": "Anchor assigned Signal to start \"Website audit - conversion optimization\"",
+      "timestamp": 1776995202628
+    },
+    {
+      "id": 1776994300926.6895,
+      "type": "task-moved",
+      "message": "Anchor assigned Signal to start \"Website audit - conversion optimization\"",
+      "timestamp": 1776994300926
+    },
+    {
+      "id": 1776994052358,
+      "type": "work-started",
+      "message": "Beacon and Vector started work on Team Us Foundation - organizational audit, sponsorship packages, grant research, and growth strategy",
+      "timestamp": 1776994052357
+    },
+    {
+      "id": 1776994047145,
+      "type": "project-created",
+      "message": "\ud83d\ude80 Project launched: Team Us Foundation Growth System - 30 tasks created, Beacon leading with Signal, Vector, Audit support",
+      "timestamp": 1776994047145
+    },
+    {
+      "id": 1776983182528.7917,
+      "type": "task-completed",
+      "message": "Audit approved \"Setup quarantine system\" by Sentinel - Quality verified!",
+      "timestamp": 1776983182528
+    },
+    {
+      "id": 1776983182528.0671,
+      "type": "task-completed",
+      "message": "Audit approved \"Setup VPN routing rules\" by Cipher - Quality verified!",
+      "timestamp": 1776983182528
+    },
+    {
+      "id": 1776980478447.2317,
+      "type": "task-moved",
+      "message": "Anchor assigned Cipher to start \"Setup VPN routing rules\"",
+      "timestamp": 1776980478447
+    },
+    {
+      "id": 1776980478447.7776,
+      "type": "task-moved",
+      "message": "Anchor assigned Sentinel to start \"Setup quarantine system\"",
+      "timestamp": 1776980478447
+    },
+    {
+      "id": 1776980478446.0857,
+      "type": "task-completed",
+      "message": "Audit approved \"Define threat detection rules\" by Sentinel - Quality verified!",
+      "timestamp": 1776980478446
+    },
+    {
+      "id": 1776980478446.8857,
+      "type": "task-completed",
+      "message": "Audit approved \"Configure NordVPN auto-connect\" by Cipher - Quality verified!",
+      "timestamp": 1776980478446
+    },
+    {
+      "id": 1776977774668.1453,
+      "type": "task-moved",
+      "message": "Anchor assigned Cipher to start \"Configure NordVPN auto-connect\"",
+      "timestamp": 1776977774668
+    },
+    {
+      "id": 1776977774668.7666,
+      "type": "task-moved",
+      "message": "Anchor assigned Sentinel to start \"Define threat detection rules\"",
+      "timestamp": 1776977774668
+    },
+    {
+      "id": 1776977774668.9077,
+      "type": "task-completed",
+      "message": "Audit approved \"Create file scanning workflow\" by Sentinel - Quality verified!",
+      "timestamp": 1776977774668
+    },
+    {
+      "id": 1776977774668.9082,
+      "type": "task-completed",
+      "message": "Audit approved \"Test VPN kill switch\" by Cipher - Quality verified!",
+      "timestamp": 1776977774668
+    },
+    {
+      "id": 1776976572798.3171,
+      "type": "task-completed",
+      "message": "Audit approved \"Deep linking to tasks/projects\" by Engine - Quality verified!",
+      "timestamp": 1776976572798
+    },
+    {
+      "id": 1776975086467.3455,
+      "type": "task-moved",
+      "message": "Anchor assigned Sentinel to start \"Create file scanning workflow\"",
+      "timestamp": 1776975086467
+    },
+    {
+      "id": 1776975086467.036,
+      "type": "task-moved",
+      "message": "Anchor assigned Cipher to start \"Test VPN kill switch\"",
+      "timestamp": 1776975086467
+    },
+    {
+      "id": 1776975076734.1162,
+      "type": "task-created",
+      "message": "Anchor created \"Setup quarantine system\" for Sentinel",
+      "timestamp": 1776975076734
+    },
+    {
+      "id": 1776975076734.0522,
+      "type": "task-created",
+      "message": "Anchor created \"Define threat detection rules\" for Sentinel",
+      "timestamp": 1776975076734
+    },
+    {
+      "id": 1776975076734.3547,
+      "type": "task-created",
+      "message": "Anchor created \"Create file scanning workflow\" for Sentinel",
+      "timestamp": 1776975076734
+    },
+    {
+      "id": 1776975076734.1765,
+      "type": "task-created",
+      "message": "Anchor created \"Test VPN kill switch\" for Cipher",
+      "timestamp": 1776975076734
+    },
+    {
+      "id": 1776975076734.2695,
+      "type": "task-created",
+      "message": "Anchor created \"Setup VPN routing rules\" for Cipher",
+      "timestamp": 1776975076734
+    },
+    {
+      "id": 1776975076734.8523,
+      "type": "task-created",
+      "message": "Anchor created \"Configure NordVPN auto-connect\" for Cipher",
+      "timestamp": 1776975076734
+    },
+    {
+      "id": 1776973868793.5017,
+      "type": "task-moved",
+      "message": "Anchor assigned Engine to start \"Deep linking to tasks/projects\"",
+      "timestamp": 1776973868793
+    },
+    {
+      "id": 1776973868793.5432,
+      "type": "task-completed",
+      "message": "Audit approved \"Test on Android Chrome\" by Vector - Quality verified!",
+      "timestamp": 1776973868793
+    },
+    {
+      "id": 1776973868793.7534,
+      "type": "task-completed",
+      "message": "Audit approved \"Configure notification preferences\" by Pulse - Quality verified!",
+      "timestamp": 1776973868793
+    },
+    {
+      "id": 1776973868792.6033,
+      "type": "task-completed",
+      "message": "Audit approved \"Add offline support\" by Engine - Quality verified!",
+      "timestamp": 1776973868792
+    },
+    {
+      "id": 1776971164461.164,
+      "type": "task-moved",
+      "message": "Anchor assigned Pulse to start \"Configure notification preferences\"",
+      "timestamp": 1776971164461
+    },
+    {
+      "id": 1776971164461.7852,
+      "type": "task-moved",
+      "message": "Anchor assigned Vector to start \"Test on Android Chrome\"",
+      "timestamp": 1776971164461
+    },
+    {
+      "id": 1776971164461.7307,
+      "type": "task-moved",
+      "message": "Anchor assigned Engine to start \"Add offline support\"",
+      "timestamp": 1776971164461
+    },
+    {
+      "id": 1776971164460.4126,
+      "type": "task-completed",
+      "message": "Audit approved \"Performance optimization\" by Pulse - Quality verified!",
+      "timestamp": 1776971164460
+    },
+    {
+      "id": 1776971164460.5999,
+      "type": "task-completed",
+      "message": "Audit approved \"Launch to production\" by NightCircle - Quality verified!",
+      "timestamp": 1776971164460
+    },
+    {
+      "id": 1776971164460.1455,
+      "type": "task-completed",
+      "message": "Audit approved \"Fix critical bugs\" by Engine - Quality verified!",
+      "timestamp": 1776971164460
+    },
+    {
+      "id": 1776971164460.9558,
+      "type": "task-completed",
+      "message": "Audit approved \"Test on iOS Safari\" by Vector - Quality verified!",
+      "timestamp": 1776971164460
+    },
+    {
+      "id": 1776971164460.0076,
+      "type": "task-completed",
+      "message": "Audit approved \"Task completion notification template\" by Signal - Quality verified!",
+      "timestamp": 1776971164460
+    },
+    {
+      "id": 1776968377338.8843,
+      "type": "task-moved",
+      "message": "Anchor assigned Pulse to start \"Performance optimization\"",
+      "timestamp": 1776968377338
+    },
+    {
+      "id": 1776968377338.8179,
+      "type": "task-moved",
+      "message": "Anchor assigned Vector to start \"Test on iOS Safari\"",
+      "timestamp": 1776968377338
+    },
+    {
+      "id": 1776968377338.0142,
+      "type": "task-moved",
+      "message": "Anchor assigned Signal to start \"Task completion notification template\"",
+      "timestamp": 1776968377338
+    },
+    {
+      "id": 1776968377338.1707,
+      "type": "task-moved",
+      "message": "Anchor assigned Engine to start \"Fix critical bugs\"",
+      "timestamp": 1776968377338
+    },
+    {
+      "id": 1776968377338.4265,
+      "type": "task-moved",
+      "message": "Anchor assigned NightCircle to start \"Launch to production\"",
+      "timestamp": 1776968377338
+    },
+    {
+      "id": 1776968377338.0667,
+      "type": "task-completed",
+      "message": "Audit approved \"Telegram auto-reply with app link\" by NightCircle - Quality verified!",
+      "timestamp": 1776968377338
+    },
+    {
+      "id": 1776968377337.476,
+      "type": "task-completed",
+      "message": "Audit approved \"Test notification delivery\" by Vector - Quality verified!",
+      "timestamp": 1776968377337
+    },
+    {
+      "id": 1776968377337.056,
+      "type": "task-completed",
+      "message": "Audit approved \"Daily Briefing notification template\" by Signal - Quality verified!",
+      "timestamp": 1776968377337
+    },
+    {
+      "id": 1776968377337.6025,
+      "type": "task-completed",
+      "message": "Audit approved \"Notification permission request\" by Pulse - Quality verified!",
+      "timestamp": 1776968377337
+    },
+    {
+      "id": 1776968377337.6406,
+      "type": "task-completed",
+      "message": "Audit approved \"Integrate OneSignal SDK\" by Engine - Quality verified!",
+      "timestamp": 1776968377337
+    },
+    {
+      "id": 1776965614161.26,
+      "type": "task-moved",
+      "message": "Anchor assigned Pulse to start \"Notification permission request\"",
+      "timestamp": 1776965614161
+    },
+    {
+      "id": 1776965614161.9836,
+      "type": "task-moved",
+      "message": "Anchor assigned Signal to start \"Daily Briefing notification template\"",
+      "timestamp": 1776965614161
+    },
+    {
+      "id": 1776965614161.3955,
+      "type": "task-moved",
+      "message": "Anchor assigned Engine to start \"Integrate OneSignal SDK\"",
+      "timestamp": 1776965614161
+    },
+    {
+      "id": 1776964876076.6765,
+      "type": "task-completed",
+      "message": "Verifier approved \"Test on iOS/Android\" by Pulse - Quality verified!",
+      "timestamp": 1776964876076
+    },
+    {
+      "id": 1776964876076.0576,
+      "type": "task-completed",
+      "message": "Verifier approved \"Test end-to-end\" by Signal - Quality verified!",
+      "timestamp": 1776964876076
+    },
+    {
+      "id": 1776964876076.811,
+      "type": "task-completed",
+      "message": "Verifier approved \"Setup OneSignal account\" by Signal - Quality verified!",
+      "timestamp": 1776964876076
+    },
+    {
+      "id": 1776964876076.6296,
+      "type": "task-completed",
+      "message": "Verifier approved \"Install prompt UI\" by Pulse - Quality verified!",
+      "timestamp": 1776964876076
+    },
+    {
+      "id": 1776964876076.0847,
+      "type": "task-completed",
+      "message": "Verifier approved \"Implement service worker\" by Engine - Quality verified!",
+      "timestamp": 1776964876076
+    },
+    {
+      "id": 1776963613460.447,
+      "type": "task-moved",
+      "message": "Vector started working on \"Test notification delivery\"",
+      "timestamp": 1776963613460
+    },
+    {
+      "id": 1776963613460.6323,
+      "type": "task-moved",
+      "message": "NightCircle started working on \"Telegram auto-reply with app link\"",
+      "timestamp": 1776963613460
+    },
+    {
+      "id": 1776962104775.9778,
+      "type": "task-completed",
+      "message": "Signal completed \"Configure Brave Search API\"",
+      "timestamp": 1776962104775
+    },
+    {
+      "id": 1776962104775.3809,
+      "type": "task-completed",
+      "message": "Signal completed \"Setup NASA API\"",
+      "timestamp": 1776962104775
+    },
+    {
+      "id": 1776962104775.3481,
+      "type": "task-completed",
+      "message": "Signal completed \"Integrate ESPN API\"",
+      "timestamp": 1776962104775
+    },
+    {
+      "id": 1776962104775.677,
+      "type": "task-completed",
+      "message": "Signal completed \"Add SpaceX API\"",
+      "timestamp": 1776962104775
+    },
+    {
+      "id": 1776962104775.1213,
+      "type": "task-completed",
+      "message": "Signal completed \"Format for mobile delivery\"",
+      "timestamp": 1776962104775
+    },
+    {
+      "id": 1776962104775.9617,
+      "type": "task-completed",
+      "message": "Signal completed \"Schedule 8am delivery\"",
+      "timestamp": 1776962104775
+    },
+    {
+      "id": 1776962104775.742,
+      "type": "task-created",
+      "message": "Signal created \"Test end-to-end\"",
+      "timestamp": 1776962104775
+    },
+    {
+      "id": 1776962104775.3218,
+      "type": "task-completed",
+      "message": "Pulse completed \"Design mobile layouts\"",
+      "timestamp": 1776962104775
+    },
+    {
+      "id": 1776962104775.9565,
+      "type": "task-completed",
+      "message": "Pulse completed \"Implement bottom navigation\"",
+      "timestamp": 1776962104775
+    },
+    {
+      "id": 1776962104775.002,
+      "type": "task-completed",
+      "message": "Pulse completed \"Optimize touch targets\"",
+      "timestamp": 1776962104775
+    },
+    {
+      "id": 1776962104775.182,
+      "type": "task-created",
+      "message": "Pulse created \"Test on iOS/Android\"",
+      "timestamp": 1776962104775
+    },
+    {
+      "id": 1776962104775.5999,
+      "type": "task-created",
+      "message": "Pulse created \"Performance optimization\"",
+      "timestamp": 1776962104775
+    },
+    {
+      "id": 1776960203588.8167,
+      "type": "task-moved",
+      "message": "Signal updated \"Setup OneSignal account\"",
+      "timestamp": 1776960203588
+    },
+    {
+      "id": 1776960203588.0986,
+      "type": "task-moved",
+      "message": "Pulse updated \"Install prompt UI\"",
+      "timestamp": 1776960203588
+    },
+    {
+      "id": 1776960203588.527,
+      "type": "task-moved",
+      "message": "Engine updated \"Implement service worker\"",
+      "timestamp": 1776960203588
+    },
+    {
+      "id": 1776959850424.6035,
+      "type": "task-completed",
+      "message": "Signal updated Setup OneSignal account",
+      "timestamp": 1776959850424
+    },
+    {
+      "id": 1776959850424.023,
+      "type": "task-review",
+      "message": "Signal updated Setup OneSignal account",
+      "timestamp": 1776959850424
+    },
+    {
+      "id": 1776959850424.545,
+      "type": "task-completed",
+      "message": "Pulse updated Install prompt UI",
+      "timestamp": 1776959850424
+    },
+    {
+      "id": 1776959850424.0198,
+      "type": "task-review",
+      "message": "Pulse updated Install prompt UI",
+      "timestamp": 1776959850424
+    },
+    {
+      "id": 1776959830437.146,
+      "type": "task-completed",
+      "message": "Engine updated Implement service worker",
+      "timestamp": 1776959830437
+    },
+    {
+      "id": 1776959830437.61,
+      "type": "task-review",
+      "message": "Engine updated Implement service worker",
+      "timestamp": 1776959830437
+    },
+    {
+      "id": 1776959824537.4568,
+      "type": "task-moved",
+      "message": "Pulse started working on \"Install prompt UI\" (minimum 30 min work required)",
+      "timestamp": 1776959824537
+    },
+    {
+      "id": 1776959824537.9385,
+      "type": "task-moved",
+      "message": "Signal started working on \"Setup OneSignal account\" (minimum 30 min work required)",
+      "timestamp": 1776959824537
+    },
+    {
+      "id": 1776959824537.4321,
+      "type": "task-moved",
+      "message": "Engine started working on \"Implement service worker\" (minimum 30 min work required)",
+      "timestamp": 1776959824537
+    },
+    {
+      "id": 1776959730498.8896,
+      "type": "task-completed",
+      "message": "Pulse updated Install prompt UI",
+      "timestamp": 1776959730498
+    },
+    {
+      "id": 1776959730497.6187,
+      "type": "task-review",
+      "message": "Pulse updated Install prompt UI",
+      "timestamp": 1776959730497
+    },
+    {
+      "id": 1776959720385.2712,
+      "type": "task-completed",
+      "message": "Signal updated Setup OneSignal account",
+      "timestamp": 1776959720385
+    },
+    {
+      "id": 1776959720385.8704,
+      "type": "task-review",
+      "message": "Signal updated Setup OneSignal account",
+      "timestamp": 1776959720385
+    },
+    {
+      "id": 1776959690393.8936,
+      "type": "task-completed",
+      "message": "Engine updated Implement service worker",
+      "timestamp": 1776959690393
+    },
+    {
+      "id": 1776959690393.868,
+      "type": "task-review",
+      "message": "Engine updated Implement service worker",
+      "timestamp": 1776959690393
+    },
+    {
+      "id": 1776959678990.161,
+      "type": "task-moved",
+      "message": "Pulse resumed work on \"Install prompt UI\"",
+      "timestamp": 1776959678990
+    },
+    {
+      "id": 1776959678990.8342,
+      "type": "task-moved",
+      "message": "Signal resumed work on \"Setup OneSignal account\"",
+      "timestamp": 1776959678990
+    },
+    {
+      "id": 1776959678990.3542,
+      "type": "task-moved",
+      "message": "Engine resumed work on \"Implement service worker\"",
+      "timestamp": 1776959678990
+    },
+    {
+      "id": 1776959480430.339,
+      "type": "task-completed",
+      "message": "Pulse updated Install prompt UI",
+      "timestamp": 1776959480430
+    },
+    {
+      "id": 1776959480430.434,
+      "type": "task-review",
+      "message": "Pulse updated Install prompt UI",
+      "timestamp": 1776959480430
+    },
+    {
+      "id": 1776959470457.9636,
+      "type": "task-completed",
+      "message": "Signal updated Setup OneSignal account",
+      "timestamp": 1776959470457
+    },
+    {
+      "id": 1776959470457.5107,
+      "type": "task-review",
+      "message": "Signal updated Setup OneSignal account",
+      "timestamp": 1776959470457
+    },
+    {
+      "id": 1776959460362.9646,
+      "type": "task-completed",
+      "message": "Engine updated Implement service worker",
+      "timestamp": 1776959460362
+    },
+    {
+      "id": 1776959460362.6301,
+      "type": "task-review",
+      "message": "Engine updated Implement service worker",
+      "timestamp": 1776959460362
+    },
+    {
+      "id": 1776959454300.6882,
+      "type": "task-moved",
+      "message": "Pulse updated \"Install prompt UI\"",
+      "timestamp": 1776959454300
+    },
+    {
+      "id": 1776959454300.8535,
+      "type": "task-moved",
+      "message": "Signal updated \"Setup OneSignal account\"",
+      "timestamp": 1776959454300
+    },
+    {
+      "id": 1776959454300.0693,
+      "type": "task-moved",
+      "message": "Engine updated \"Implement service worker\"",
+      "timestamp": 1776959454300
+    },
+    {
+      "id": 1776959445537.168,
+      "type": "task-created",
+      "message": "Engine assigned \"Implement service worker\" from PWA Project",
+      "timestamp": 1776959445537
+    },
+    {
+      "id": 1776959445537.3591,
+      "type": "task-created",
+      "message": "Engine assigned \"Add offline support\" from PWA Project",
+      "timestamp": 1776959445537
+    },
+    {
+      "id": 1776959445537.93,
+      "type": "task-created",
+      "message": "Pulse assigned \"Install prompt UI\" from PWA Project",
+      "timestamp": 1776959445537
+    },
+    {
+      "id": 1776959445537.5361,
+      "type": "task-created",
+      "message": "Signal assigned \"Setup OneSignal account\" from PWA Project",
+      "timestamp": 1776959445537
+    },
+    {
+      "id": 1776959445537.9358,
+      "type": "task-created",
+      "message": "Engine assigned \"Integrate OneSignal SDK\" from PWA Project",
+      "timestamp": 1776959445537
+    },
+    {
+      "id": 1776959445537.4116,
+      "type": "task-created",
+      "message": "Pulse assigned \"Notification permission request\" from PWA Project",
+      "timestamp": 1776959445537
+    },
+    {
+      "id": 1776959445538.512,
+      "type": "task-created",
+      "message": "Signal assigned \"Daily Briefing notification template\" from PWA Project",
+      "timestamp": 1776959445538
+    },
+    {
+      "id": 1776959445538.176,
+      "type": "task-created",
+      "message": "Signal assigned \"Task completion notification template\" from PWA Project",
+      "timestamp": 1776959445538
+    },
+    {
+      "id": 1776959445538.1006,
+      "type": "task-created",
+      "message": "Vector assigned \"Test notification delivery\" from PWA Project",
+      "timestamp": 1776959445538
+    },
+    {
+      "id": 1776959445538.7053,
+      "type": "task-created",
+      "message": "NightCircle assigned \"Telegram auto-reply with app link\" from PWA Project",
+      "timestamp": 1776959445538
+    },
+    {
+      "id": 1776959445538.5754,
+      "type": "task-created",
+      "message": "Engine assigned \"Deep linking to tasks/projects\" from PWA Project",
+      "timestamp": 1776959445538
+    },
+    {
+      "id": 1776959445538.94,
+      "type": "task-created",
+      "message": "Pulse assigned \"Configure notification preferences\" from PWA Project",
+      "timestamp": 1776959445538
+    },
+    {
+      "id": 1776959445538.4905,
+      "type": "task-created",
+      "message": "Vector assigned \"Test on iOS Safari\" from PWA Project",
+      "timestamp": 1776959445538
+    },
+    {
+      "id": 1776959445538.1045,
+      "type": "task-created",
+      "message": "Vector assigned \"Test on Android Chrome\" from PWA Project",
+      "timestamp": 1776959445538
+    },
+    {
+      "id": 1776959445538.982,
+      "type": "task-created",
+      "message": "Engine assigned \"Fix critical bugs\" from PWA Project",
+      "timestamp": 1776959445538
+    },
+    {
+      "id": 1776959445538.6726,
+      "type": "task-created",
+      "message": "NightCircle assigned \"Launch to production\" from PWA Project",
+      "timestamp": 1776959445538
+    },
+    {
+      "id": 1776959040266.3232,
+      "type": "task-completed",
+      "message": "Engine updated Add PWA manifest with icons",
+      "timestamp": 1776959040266
+    },
+    {
+      "id": 1776959040266.3943,
+      "type": "task-review",
+      "message": "Engine updated Add PWA manifest with icons",
+      "timestamp": 1776959040266
+    },
+    {
+      "id": 1776959020274.2085,
+      "type": "task-completed",
+      "message": "Pulse updated Create app icons (512px, 192px)",
+      "timestamp": 1776959020274
+    },
+    {
+      "id": 1776959020274.8906,
+      "type": "task-review",
+      "message": "Pulse updated Create app icons (512px, 192px)",
+      "timestamp": 1776959020274
+    },
+    {
+      "id": 1776959006242.0203,
+      "type": "task-created",
+      "message": "Pulse created \"Create app icons (512px, 192px)\" from PWA Project",
+      "timestamp": 1776959006242
+    },
+    {
+      "id": 1776959006242.6277,
+      "type": "task-moved",
+      "message": "Pulse updated \"Create app icons (512px, 192px)\"",
+      "timestamp": 1776959006242
+    },
+    {
+      "id": 1776959006242.692,
+      "type": "task-created",
+      "message": "Engine created \"Add PWA manifest with icons\" from PWA Project",
+      "timestamp": 1776959006242
+    }
+  ]
+}

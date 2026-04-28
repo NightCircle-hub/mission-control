@@ -1,0 +1,626 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "AI Dream Team Deployment",
+      "description": "Deploy 12 specialized AI agents with Mission Control dashboard",
+      "status": "completed",
+      "priority": "high",
+      "progress": 100,
+      "signalAnalysisStatus": "complete",
+      "taskCount": 0,
+      "completedTaskCount": 0,
+      "assignedAgents": [
+        {
+          "id": "nightcircle",
+          "name": "NightCircle",
+          "role": "Orchestrator"
+        },
+        {
+          "id": "engine",
+          "name": "Engine",
+          "role": "Build Engineer"
+        },
+        {
+          "id": "signal",
+          "name": "Signal",
+          "role": "Research Specialist"
+        }
+      ],
+      "relatedDocuments": [
+        {
+          "id": 1,
+          "name": "Agent Definitions",
+          "type": "markdown",
+          "url": "/workspace/agents/"
+        },
+        {
+          "id": 2,
+          "name": "Mission Control README",
+          "type": "markdown",
+          "url": "/workspace/mission-control/README.md"
+        }
+      ],
+      "lastUpdated": "2026-04-23T15:25:00.032Z",
+      "createdBy": "Elijah Smith",
+      "createdAt": "2026-04-21T15:25:00.032Z",
+      "signalAnalysis": {
+        "status": "complete",
+        "scope": "Complete AI agent system with dashboard, task management, and automated workflows",
+        "tasks": [
+          {
+            "id": 1,
+            "title": "Create agent definitions",
+            "status": "done",
+            "dependencyIds": []
+          },
+          {
+            "id": 2,
+            "title": "Build Mission Control dashboard",
+            "status": "done",
+            "dependencyIds": [
+              1
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Implement taskboard system",
+            "status": "done",
+            "dependencyIds": [
+              2
+            ]
+          }
+        ],
+        "dependencies": [
+          "Node.js environment",
+          "Next.js framework",
+          "Telegram API access"
+        ],
+        "blockers": [],
+        "recommendedAgents": [
+          "Engine",
+          "Signal",
+          "NightCircle",
+          "Vector"
+        ],
+        "executionPlan": "Phase 1: Agent setup → Phase 2: Dashboard build → Phase 3: Integration → Phase 4: Testing"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Daily Briefing Automation",
+      "description": "Automated 8am EST briefing with live news, sports, weather via Telegram",
+      "status": "completed",
+      "priority": "high",
+      "progress": 100,
+      "signalAnalysisStatus": "complete",
+      "taskCount": 7,
+      "completedTaskCount": 7,
+      "assignedAgents": [
+        {
+          "id": "signal",
+          "name": "Signal",
+          "role": "Research Specialist"
+        },
+        {
+          "id": "nightcircle",
+          "name": "NightCircle",
+          "role": "Orchestrator"
+        }
+      ],
+      "relatedDocuments": [
+        {
+          "id": 3,
+          "name": "API Setup Guide",
+          "type": "markdown",
+          "url": "/workspace/API-SETUP.md"
+        },
+        {
+          "id": 4,
+          "name": "Daily Briefing Skill",
+          "type": "markdown",
+          "url": "/workspace/skills/daily-briefing/SKILL.md"
+        }
+      ],
+      "lastUpdated": "2026-04-23T15:25:00.032Z",
+      "createdBy": "Elijah Smith",
+      "createdAt": "2026-04-22T15:25:00.032Z",
+      "signalAnalysis": {
+        "status": "complete",
+        "scope": "Integrate multiple APIs for real-time data delivery",
+        "tasks": [
+          {
+            "id": 1,
+            "title": "Configure Brave Search API",
+            "status": "done",
+            "dependencyIds": []
+          },
+          {
+            "id": 2,
+            "title": "Setup NASA API",
+            "status": "done",
+            "dependencyIds": []
+          },
+          {
+            "id": 3,
+            "title": "Integrate ESPN API",
+            "status": "done",
+            "dependencyIds": []
+          },
+          {
+            "id": 4,
+            "title": "Add SpaceX API",
+            "status": "done",
+            "dependencyIds": []
+          },
+          {
+            "id": 5,
+            "title": "Format for mobile delivery",
+            "status": "done",
+            "dependencyIds": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": 6,
+            "title": "Schedule 8am delivery",
+            "status": "done",
+            "dependencyIds": [
+              5
+            ]
+          },
+          {
+            "id": 7,
+            "title": "Test end-to-end",
+            "status": "in-progress",
+            "dependencyIds": [
+              6
+            ]
+          }
+        ],
+        "dependencies": [
+          "Brave API key",
+          "NASA API key",
+          "Telegram bot access"
+        ],
+        "blockers": [],
+        "recommendedAgents": [
+          "Signal",
+          "NightCircle"
+        ],
+        "executionPlan": "API setup → Data integration → Formatting → Scheduling → Testing"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Mobile Optimization",
+      "description": "Optimize Mission Control for mobile devices with responsive design",
+      "status": "completed",
+      "priority": "medium",
+      "progress": 100,
+      "signalAnalysisStatus": "complete",
+      "taskCount": 5,
+      "completedTaskCount": 5,
+      "assignedAgents": [
+        {
+          "id": "pulse",
+          "name": "Pulse",
+          "role": "Creative & Design"
+        },
+        {
+          "id": "engine",
+          "name": "Engine",
+          "role": "Build Engineer"
+        }
+      ],
+      "relatedDocuments": [],
+      "lastUpdated": "2026-04-23T15:25:00.032Z",
+      "createdBy": "Elijah Smith",
+      "createdAt": "2026-04-23T03:25:00.032Z",
+      "signalAnalysis": {
+        "status": "complete",
+        "scope": "Full mobile responsiveness across all dashboard tabs",
+        "tasks": [
+          {
+            "id": 1,
+            "title": "Design mobile layouts",
+            "status": "done",
+            "dependencyIds": []
+          },
+          {
+            "id": 2,
+            "title": "Implement bottom navigation",
+            "status": "done",
+            "dependencyIds": [
+              1
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Optimize touch targets",
+            "status": "done",
+            "dependencyIds": [
+              1
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Test on iOS/Android",
+            "status": "in-progress",
+            "dependencyIds": [
+              2,
+              3
+            ]
+          },
+          {
+            "id": 5,
+            "title": "Performance optimization",
+            "status": "todo",
+            "dependencyIds": [
+              4
+            ]
+          }
+        ],
+        "dependencies": [
+          "Mobile testing devices"
+        ],
+        "blockers": [],
+        "recommendedAgents": [
+          "Pulse",
+          "Engine"
+        ],
+        "executionPlan": "Design → Implementation → Testing → Optimization"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Security Enhancement",
+      "description": "Implement VPN integration and Sentinel file security workflow",
+      "status": "completed",
+      "priority": "high",
+      "progress": 100,
+      "signalAnalysisStatus": "pending",
+      "taskCount": 9,
+      "completedTaskCount": 9,
+      "assignedAgents": [],
+      "relatedDocuments": [
+        {
+          "id": 5,
+          "name": "VPN Agent Definition",
+          "type": "markdown",
+          "url": "/workspace/agents/vpn.md"
+        },
+        {
+          "id": 6,
+          "name": "Sentinel Agent Definition",
+          "type": "markdown",
+          "url": "/workspace/agents/sentinel.md"
+        }
+      ],
+      "lastUpdated": "2026-04-23T20:11:16.869Z",
+      "createdBy": "Elijah Smith",
+      "createdAt": "2026-04-23T15:25:00.032Z",
+      "signalAnalysis": {
+        "status": "active",
+        "tasks": [
+          {
+            "title": "Define Security Validation Rules",
+            "status": "done"
+          },
+          {
+            "title": "Install NordVPN CLI",
+            "status": "done"
+          },
+          {
+            "title": "Enable NordVPN Kill Switch",
+            "status": "done"
+          }
+        ]
+      }
+    },
+    {
+      "id": 1776958533367,
+      "title": "Mission Control PWA with Push Notifications",
+      "description": "Convert Mission Control to installable app with push notifications for briefings and task completions. Telegram becomes input-only channel; outputs delivered via app notifications.",
+      "status": "completed",
+      "priority": "high",
+      "progress": 47,
+      "signalAnalysisStatus": "complete",
+      "taskCount": 30,
+      "completedTaskCount": 14,
+      "assignedAgents": [
+        {
+          "id": "engine",
+          "name": "Engine",
+          "role": "PWA Implementation Lead"
+        },
+        {
+          "id": "pulse",
+          "name": "Pulse",
+          "role": "App Design & Icons"
+        },
+        {
+          "id": "signal",
+          "name": "Signal",
+          "role": "Notification Service Setup"
+        },
+        {
+          "id": "vector",
+          "name": "Vector",
+          "role": "Analytics & Optimization"
+        },
+        {
+          "id": "nightcircle",
+          "name": "NightCircle",
+          "role": "Telegram Integration"
+        }
+      ],
+      "relatedDocuments": [],
+      "lastUpdated": "2026-04-23T15:39:46.462Z",
+      "createdBy": "Elijah Smith",
+      "createdAt": "2026-04-23T15:35:33.368Z",
+      "signalAnalysis": {
+        "status": "complete",
+        "scope": "Convert Mission Control to installable PWA with push notifications. Telegram becomes input-only; outputs via app notifications.",
+        "tasks": [
+          {
+            "id": 1,
+            "title": "Add PWA manifest with icons",
+            "status": "done",
+            "dependencyIds": [],
+            "assignee": "Engine",
+            "priority": "critical"
+          },
+          {
+            "id": 2,
+            "title": "Implement service worker",
+            "status": "done",
+            "dependencyIds": [],
+            "assignee": "Engine",
+            "priority": "critical"
+          },
+          {
+            "id": 3,
+            "title": "Create app icons (512px, 192px)",
+            "status": "done",
+            "dependencyIds": [],
+            "assignee": "Pulse",
+            "priority": "critical"
+          },
+          {
+            "id": 4,
+            "title": "Add offline support",
+            "status": "done",
+            "dependencyIds": [
+              2
+            ],
+            "assignee": "Engine",
+            "priority": "high"
+          },
+          {
+            "id": 5,
+            "title": "Install prompt UI",
+            "status": "done",
+            "dependencyIds": [
+              1
+            ],
+            "assignee": "Pulse",
+            "priority": "high"
+          },
+          {
+            "id": 6,
+            "title": "Setup OneSignal account",
+            "status": "done",
+            "dependencyIds": [],
+            "assignee": "Signal",
+            "priority": "critical"
+          },
+          {
+            "id": 7,
+            "title": "Integrate OneSignal SDK",
+            "status": "done",
+            "dependencyIds": [
+              6
+            ],
+            "assignee": "Engine",
+            "priority": "critical"
+          },
+          {
+            "id": 8,
+            "title": "Notification permission request",
+            "status": "done",
+            "dependencyIds": [
+              7
+            ],
+            "assignee": "Pulse",
+            "priority": "high"
+          },
+          {
+            "id": 9,
+            "title": "Daily Briefing notification template",
+            "status": "done",
+            "dependencyIds": [
+              7
+            ],
+            "assignee": "Signal",
+            "priority": "critical"
+          },
+          {
+            "id": 10,
+            "title": "Task completion notification template",
+            "status": "done",
+            "dependencyIds": [
+              7
+            ],
+            "assignee": "Signal",
+            "priority": "critical"
+          },
+          {
+            "id": 11,
+            "title": "Test notification delivery",
+            "status": "done",
+            "dependencyIds": [
+              9,
+              10
+            ],
+            "assignee": "Vector",
+            "priority": "high"
+          },
+          {
+            "id": 12,
+            "title": "Telegram auto-reply with app link",
+            "status": "done",
+            "dependencyIds": [],
+            "assignee": "NightCircle",
+            "priority": "critical"
+          },
+          {
+            "id": 13,
+            "title": "Deep linking to tasks/projects",
+            "status": "done",
+            "dependencyIds": [
+              12
+            ],
+            "assignee": "Engine",
+            "priority": "high"
+          },
+          {
+            "id": 14,
+            "title": "Configure notification preferences",
+            "status": "done",
+            "dependencyIds": [
+              8
+            ],
+            "assignee": "Pulse",
+            "priority": "medium"
+          },
+          {
+            "id": 15,
+            "title": "Test on iOS Safari",
+            "status": "done",
+            "dependencyIds": [
+              5,
+              11
+            ],
+            "assignee": "Vector",
+            "priority": "critical"
+          },
+          {
+            "id": 16,
+            "title": "Test on Android Chrome",
+            "status": "done",
+            "dependencyIds": [
+              5,
+              11
+            ],
+            "assignee": "Vector",
+            "priority": "critical"
+          },
+          {
+            "id": 17,
+            "title": "Fix critical bugs",
+            "status": "done",
+            "dependencyIds": [
+              15,
+              16
+            ],
+            "assignee": "Engine",
+            "priority": "critical"
+          },
+          {
+            "id": 18,
+            "title": "Launch to production",
+            "status": "done",
+            "dependencyIds": [
+              17
+            ],
+            "assignee": "NightCircle",
+            "priority": "critical"
+          }
+        ],
+        "dependencies": [
+          "OneSignal account (free)",
+          "HTTPS enabled (already have via ngrok)",
+          "iOS/Android devices for testing"
+        ],
+        "blockers": [],
+        "recommendedAgents": [
+          "Engine",
+          "Pulse",
+          "Signal",
+          "Vector",
+          "NightCircle"
+        ],
+        "executionPlan": "ACCELERATED: Days 1-3: PWA Core (parallel work) → Days 4-7: Notifications + Design (parallel) → Days 8-10: Integration + Testing → Day 11-12: Launch"
+      }
+    },
+    {
+      "id": "team-us-foundation",
+      "title": "Team Us Foundation Growth System",
+      "description": "Audit and growth system for Team Us Foundation - supporting families affected by cancer through emotional, financial, and educational programs",
+      "status": "active",
+      "progress": 53,
+      "taskCount": 30,
+      "completedTaskCount": 16,
+      "createdAt": "2026-04-24T01:27:27.144Z",
+      "updatedAt": "2026-04-24T01:27:27.145Z",
+      "focusAreas": [
+        "Website audit and optimization",
+        "Sponsorship packages (Bronze/Silver/Gold/Title)",
+        "Grant funding pipeline (100+ opportunities)",
+        "Board structure and recruitment",
+        "Internship program (Marketing/Operations/Partnerships)",
+        "Events and activations",
+        "Growth strategy (+30% funding, 10 partners/quarter)"
+      ],
+      "agents": {
+        "primary": "Beacon",
+        "support": [
+          "Signal",
+          "Vector",
+          "Audit",
+          "NightCircle"
+        ]
+      },
+      "mission": "Support families affected by cancer through emotional, financial, and educational programs. Build community. Fund scholarships.",
+      "website": "Team Us Cares",
+      "deliverables": [
+        "Full organizational and website audit",
+        "Tiered sponsorship packages",
+        "Grant database (100+ opportunities)",
+        "Board structure docs + recruitment materials",
+        "Internship program framework",
+        "Event system with budget/revenue plans",
+        "Master tracking spreadsheet",
+        "Outreach emails & proposals",
+        "Growth strategy roadmap"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": 1776958861759,
+      "type": "plan-optimized",
+      "message": "Timeline accelerated: 18 tasks, 10-12 days (was 20 tasks, 4 weeks). Parallel work streams activated.",
+      "timestamp": 1776958861759,
+      "projectId": 1776958533367
+    },
+    {
+      "id": 1776958786463,
+      "type": "project-started",
+      "message": "Mission Control PWA project started! 5 agents assigned, 20 tasks ready",
+      "timestamp": 1776958786463,
+      "projectId": 1776958533367
+    },
+    {
+      "id": 1776958533397,
+      "type": "project-created",
+      "message": "Project \"Mission Control PWA with Push Notifications\" created and sent to Signal for analysis",
+      "timestamp": 1776958533397,
+      "projectId": 1776958533367
+    }
+  ]
+}
