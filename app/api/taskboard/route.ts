@@ -1,8 +1,9 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
+import path from 'path';
 
-// Absolute path to state directory on NAS
-const TASKBOARD_PATH = '/Users/elijahsmith/NAS/UGREEN/OpenClaw/workspace/state/taskboard.json';
+// Path to state directory - works both locally and on Vercel
+const TASKBOARD_PATH = path.join(process.cwd(), 'data', 'taskboard.json');
 
 export async function GET() {
   try {
