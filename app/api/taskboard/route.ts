@@ -4,8 +4,9 @@ import path from 'path';
 
 export async function GET() {
   try {
-    // On Vercel, files are in the same directory as the API route
-    const taskboardPath = path.join(process.cwd(), 'data', 'taskboard.json');
+    // Path relative to this file's location (app/api/taskboard/)
+    // Go up 3 levels to project root, then into data folder
+    const taskboardPath = path.join(__dirname, '..', '..', '..', 'data', 'taskboard.json');
     
     if (!fs.existsSync(taskboardPath)) {
       console.log('Taskboard not found at:', taskboardPath);
