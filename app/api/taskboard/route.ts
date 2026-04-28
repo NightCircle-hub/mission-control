@@ -1,12 +1,14 @@
 import { NextResponse } from 'next/server';
-import taskboardData from '../../../data/taskboard.json';
 
 export async function GET() {
-  try {
-    console.log(`Loaded ${taskboardData.tasks?.length || 0} tasks from imported JSON`);
-    return NextResponse.json(taskboardData);
-  } catch (error) {
-    console.error('Error loading taskboard:', error);
-    return NextResponse.json({ tasks: [], activities: [] }, { status: 500 });
-  }
+  // Temporary test - return hardcoded data to verify API works
+  const testData = {
+    tasks: [
+      { id: 1, title: 'Test Task 1', status: 'todo', assignee: 'NightCircle' },
+      { id: 2, title: 'Test Task 2', status: 'done', assignee: 'Engine' },
+    ],
+    activities: []
+  };
+  
+  return NextResponse.json(testData);
 }
