@@ -25,7 +25,9 @@ export default function Taskboard() {
       .then(data => {
         const tasksWithProgress = (data.tasks || []).map((t: any) => ({
           ...t,
-          progress: t.status === 'in-progress' ? Math.floor(Math.random() * 60) + 20 : (t.status === 'done' ? 100 : 0)
+          progress: t.status === 'in-progress' ? Math.floor(Math.random() * 60) + 20 : (t.status === 'done' ? 100 : 0),
+          description: t.description || '',
+          createdAt: t.createdAt || Date.now()
         }));
         setTasks(tasksWithProgress);
         setLoading(false);
@@ -88,8 +90,14 @@ export default function Taskboard() {
 
       {/* Task Detail Modal */}
       {selectedTask && (
-        <div className="fixed inset-0 bg-black/80 z-[60] flex items-end md:items-center justify-center p-4" onClick={() => setSelectedTask(null)}>
-          <div className="bg-[#1E293B] rounded-t-lg md:rounded-lg w-full max-w-md max-h-[90vh] overflow-y-auto mb-16 md:mb-0" onClick={(e) => e.stopPropagation()}>
+        <div 
+          className="fixed inset-0 bg-black/80 z-[60] flex items-end md:items-center justify-center p-4" 
+          onClick={() => setSelectedTask(null)}
+        >
+          <div 
+            className="bg-[#1E293B] rounded-t-lg md:rounded-lg w-full max-w-md max-h-[90vh] overflow-y-auto mb-16 md:mb-0" 
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="sticky top-0 bg-[#1E293B] border-b border-[#2D3748] p-4 flex items-center justify-between">
               <h2 className="text-lg font-bold">Task Details</h2>
               <button onClick={() => setSelectedTask(null)} className="text-2xl text-[#8E8E93] hover:text-white">&times;</button>
