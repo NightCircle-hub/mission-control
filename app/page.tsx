@@ -38,6 +38,9 @@ export default function Home() {
               { id: 'taskboard', label: 'Taskboard' },
               { id: 'calendar', label: 'Calendar' },
               { id: 'team', label: 'Team' },
+              { id: 'projects', label: 'Projects' },
+              { id: 'docs', label: 'Docs' },
+              { id: 'memory', label: 'Memory' },
               { id: 'overview', label: 'Overview' },
               { id: 'tools', label: 'Tools' },
               { id: 'sessions', label: 'Sessions' },
@@ -64,6 +67,9 @@ export default function Home() {
         {activeTab === 'taskboard' && <Taskboard />}
         {activeTab === 'calendar' && <Calendar />}
         {activeTab === 'team' && <TeamTab />}
+        {activeTab === 'projects' && <ProjectsTab />}
+        {activeTab === 'docs' && <DocsTab />}
+        {activeTab === 'memory' && <MemoryTab />}
         {activeTab === 'overview' && <OverviewTab />}
         {activeTab === 'tools' && <ToolsTab />}
         {activeTab === 'sessions' && <SessionsTab />}
@@ -1577,6 +1583,127 @@ function TeamTab() {
           <span className="text-[#8E8E93]">→</span>
           <div className="flex items-center gap-2">
             <span className="text-[#8E8E93]">4. NightCircle combines</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ProjectsTab() {
+  const [projects, setProjects] = useState<any[]>([]);
+  
+  useEffect(() => {
+    fetch('/api/taskboard')
+      .then(res => res.json())
+      .then(data => {
+        // Extract unique projects from tasks or use projects.json
+        setProjects(data.projects || []);
+      });
+  }, []);
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <h2 className="text-lg font-semibold text-[#E3E3E3] mb-2">Projects</h2>
+        <p className="text-sm text-[#8E8E93]">Track progress across all your initiatives</p>
+      </div>
+      
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {projects.length > 0 ? projects.map((project) => (
+          <div key={project.id} className="bg-[#0A0A0A] border border-[#1F1F1F] rounded-lg p-4">
+            <h3 className="text-sm font-medium text-[#E3E3E3] mb-2">{project.title}</h3>
+            <p className="text-xs text-[#8E8E93] mb-3">{project.description}</p>
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-xs text-[#8E8E93]">{project.status}</span>
+              <span className="text-xs text-blue-400">{project.progress || 0}%</span>
+            </div>
+            <div className="w-full bg-[#1F1F1F] rounded-full h-2">
+              <div className="bg-blue-600 h-2 rounded-full" style={{ width: `${project.progress || 0}%` }}></div>
+            </div>
+          </div>
+        )) : (
+          <div className="col-span-full text-center py-12">
+            <p className="text-[#8E8E93]">No projects loaded</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function DocsTab() {
+  const docs = [
+    { category: 'Agents', files: ['NightCircle', 'Signal', 'Vector', 'Anchor', 'Engine', 'Beacon', 'Pathfinder', 'Closer', 'Pulse', 'Vault', 'Sentinel', 'Cipher'] },
+    { category: 'Skills', files: ['Weather', 'Slack', 'TaskFlow', 'Nano Banana Pro', 'Healthcheck'] },
+    { category: 'Config', files: ['AGENTS.md', 'SOUL.md', 'USER.md', 'TOOLS.md', 'MEMORY.md'] },
+  ];
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <h2 className="text-lg font-semibold text-[#E3E3E3] mb-2">Documentation</h2>
+        <p className="text-sm text-[#8E8E93]">Browse your knowledge base</p>
+      </div>
+      
+      <div className="grid md:grid-cols-3 gap-6">
+        {docs.map((section) => (
+          <div key={section.category} className="bg-[#0A0A0A] border border-[#1F1F1F] rounded-lg p-4">
+            <h3 className="text-sm font-medium text-[#E3E3E3] mb-3">{section.category}</h3>
+            <ul className="space-y-2">
+              {section.files.map((file) => (
+                <li key={file}>
+                  <a href="#" className="text-xs text-blue-400 hover:text-blue-300">{file}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function MemoryTab() {
+  const [memories, setMemories] = useState<any[]>([]);
+  
+  useEffect(() => {
+    // In production, this would fetch from /api/memory
+    setMemories([
+      { date: '2026-04-28', title: 'Daily Sync', preview: 'Mission Control deployed to Vercel...' },
+      { date: '2026-04-27', title: 'System Updates', preview: 'NAS backup configured...' },
+    ]);
+  }, []);
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <h2 className="text-lg font-semibold text-[#E3E3E3] mb-2">Memory</h2>
+        <p className="text-sm text-[#8E8E93]">Daily notes and long-term memories</p>
+      </div>
+      
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="bg-[#0A0A0A] border border-[#1F1F1F] rounded-lg p-4">
+          <h3 className="text-sm font-medium text-[#E3E3E3] mb-3">Recent Daily Notes</h3>
+          <div className="space-y-3">
+            {memories.map((memory) => (
+              <div key={memory.date} className="border-b border-[#1F1F1F] pb-3 last:border-0">
+                <p className="text-xs text-[#8E8E93] mb-1">{memory.date}</p>
+                <h4 className="text-sm font-medium text-[#E3E3E3]">{memory.title}</h4>
+                <p className="text-xs text-[#8E8E93] mt-1">{memory.preview}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div className="bg-[#0A0A0A] border border-[#1F1F1F] rounded-lg p-4">
+          <h3 className="text-sm font-medium text-[#E3E3E3] mb-3">Long-Term Memory</h3>
+          <p className="text-xs text-[#8E8E93] mb-3">Curated insights and learnings</p>
+          <div className="space-y-2">
+            <div className="text-xs text-[#E3E3E3]">• AI Dream Team deployment complete</div>
+            <div className="text-xs text-[#E3E3E3]">• Mission Control live on Vercel</div>
+            <div className="text-xs text-[#E3E3E3]">• NAS backup automated (3am daily)</div>
+            <div className="text-xs text-[#E3E3E3]">• 116 tasks tracked across projects</div>
           </div>
         </div>
       </div>
