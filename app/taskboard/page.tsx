@@ -5,21 +5,30 @@ import { useState, useEffect } from 'react';
 interface Task {
   id: number;
   title: string;
+  description?: string;
   assignee: string;
   status: 'todo' | 'in-progress' | 'done';
   priority: 'low' | 'medium' | 'high';
+  progress?: number;
+  createdAt?: number;
 }
 
 export default function Taskboard() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedTask, setSelectedTask] = useState<Task | null>(null);
   const [filter, setFilter] = useState<'all' | 'todo' | 'in-progress' | 'done'>('all');
 
   useEffect(() => {
     fetch('/api/taskboard')
       .then(res => res.json())
       .then(data => {
-        setTasks(data.tasks || []);
+        // Add random progress to in-progress tasks for demo
+        const tasksWithProgress = (data.tasks || []).map((t: any) => ({
+          ...t,
+          progress: t.status === 'in-progress' ? Math.floor(Math.random() * 60) + 20 : (t.status === 'done' ? 100 : 0)
+        }));
+        setTasks(tasksWithProgress);
         setLoading(false);
       })
       .catch((err) => {
@@ -38,67 +47,196 @@ export default function Taskboard() {
 
   if (loading) {
     return (
-      <div className="h-[calc(100vh-180px)] flex items-center justify-center">
+      <div className="min-h-screen bg-[#0B0F19] flex items-center justify-center pb-20">
         <p className="text-[#8E8E93]">Loading tasks...</p>
       </div>
     );
   }
 
   return (
-    <div className="h-[calc(100vh-180px)] overflow-y-auto">
-      <div className="mb-6 flex items-center justify-between">
-        <div>
-          <h2 className="text-lg font-semibold text-[#E3E3E3] mb-1">Taskboard</h2>
-          <p className="text-sm text-[#8E8E93]">{tasks.length} total tasks • {todoCount} todo • {inProgressCount} in progress • {doneCount} done</p>
-        </div>
-        <div className="flex gap-2">
+    <div className="min-h-screen bg-[#0B0F19] text-white pb-20">
+      {/* Header */}
+      <div className="p-4 border-b border-[#1E293B] sticky top-0 bg-[#0B0F19] z-10">
+        <h1 className="text-2xl font-bold mb-1">Taskboard</h1>
+        <p className="text-sm text-[#8E8E93] mb-4">
+          {tasks.length} total • {todoCount} todo • {inProgressCount} in progress • {doneCount} done
+        </p>
+        
+        {/* Filter Tabs */}
+        <div className="flex gap-2 overflow-x-auto">
           {(['all', 'todo', 'in-progress', 'done'] as const).map((f) => (
             <button
               key={f}
               onClick={() => setFilter(f)}
-              className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
-                filter === f ? 'bg-blue-600 text-white' : 'text-[#8E8E93] hover:bg-[#1A1A1A]'
+              className={`px-4 py-2 text-xs font-medium rounded-full whitespace-nowrap ${
+                filter === f 
+                  ? 'bg-blue-600 text-white' 
+                  : 'bg-[#1E293B] text-[#8E8E93]'
               }`}
             >
-              {f.charAt(0).toUpperCase() + f.slice(1).replace('-', ' ')}
+              {f === 'all' ? 'All' : f.replace('-', ' ').split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
             </button>
           ))}
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6">
-        <Column title="TODO" color="blue" tasks={filteredTasks.filter(t => t.status === 'todo')} totalCount={todoCount} />
-        <Column title="IN PROGRESS" color="purple" tasks={filteredTasks.filter(t => t.status === 'in-progress')} totalCount={inProgressCount} />
-        <Column title="DONE" color="green" tasks={filteredTasks.filter(t => t.status === 'done')} totalCount={doneCount} />
+      {/* Task List */}
+      <div className="p-4 space-y-3">
+        {filteredTasks.map((task) => (
+          <TaskCard 
+            key={task.id} 
+            task={task} 
+            onClick={() => setSelectedTask(task)}
+          />
+        ))}
+        {filteredTasks.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-[#8E8E93]">No tasks in this view</p>
+          </div>
+        )}
+      </div>
+
+      {/* Task Detail Modal */}
+      {selectedTask && (
+        <TaskDetail task={selectedTask} onClose={() => setSelectedTask(null)} />
+      )}
+    </div>
+  );
+}
+
+function TaskCard({ task, onClick }: { task: Task; onClick: () => void }) {
+  const priorityColors = {
+    low: 'text-green-400',
+    medium: 'text-yellow-400',
+    high: 'text-red-400',
+  };
+
+  const statusColors = {
+    'todo': 'border-l-blue-500',
+    'in-progress': 'border-l-purple-500',
+    'done': 'border-l-green-500',
+  };
+
+  return (
+    <div 
+      onClick={onClick}
+      className={`bg-[#1E293B] rounded-lg p-4 border-l-4 ${statusColors[task.status]} cursor-pointer active:bg-[#2D3748] transition-colors`}
+    >
+      <div className="flex items-start justify-between mb-2">
+        <h3 className="font-semibold flex-1">{task.title}</h3>
+        <span className={`text-xs ${priorityColors[task.priority]}`}>
+          {task.priority === 'high' ? '●' : task.priority === 'medium' ? '●' : '○'}
+        </span>
+      </div>
+      
+      {task.description && (
+        <p className="text-sm text-[#8E8E93] mb-3 line-clamp-2">{task.description}</p>
+      )}
+      
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-xs font-bold">
+            {task.assignee.charAt(0)}
+          </div>
+          <span className="text-xs text-[#8E8E93]">{task.assignee}</span>
+        </div>
+        
+        {task.status === 'in-progress' && task.progress !== undefined && (
+          <div className="flex items-center gap-2">
+            <div className="w-24 bg-[#0F1623] rounded-full h-2">
+              <div 
+                className="bg-purple-500 h-2 rounded-full transition-all" 
+                style={{ width: `${task.progress}%` }}
+              ></div>
+            </div>
+            <span className="text-xs text-purple-400">{task.progress}%</span>
+          </div>
+        )}
+        
+        {task.status === 'done' && (
+          <span className="text-xs text-green-400">✓ Complete</span>
+        )}
       </div>
     </div>
   );
 }
 
-function Column({ title, color, tasks, totalCount }: { title: string; color: string; tasks: Task[]; totalCount: number }) {
-  const colors: any = {
-    blue: { bg: 'bg-blue-600/20', border: 'border-blue-600/30', text: 'text-blue-400' },
-    purple: { bg: 'bg-purple-600/20', border: 'border-purple-600/30', text: 'text-purple-400' },
-    green: { bg: 'bg-green-600/20', border: 'border-green-600/30', text: 'text-green-400' },
-  };
-
+function TaskDetail({ task, onClose }: { task: Task; onClose: () => void }) {
   return (
-    <div className={`bg-[#0A0A0A] border ${colors[color].border} rounded-lg p-4`}>
-      <div className="flex items-center justify-between mb-4">
-        <h3 className={`text-xs font-semibold uppercase tracking-wide ${colors[color].text}`}>{title}</h3>
-        <span className="text-xs text-[#8E8E93]">{tasks.length} / {totalCount}</span>
-      </div>
-      <div className="space-y-3">
-        {tasks.map((task) => (
-          <div key={task.id} className="bg-[#141414] border border-[#1F1F1F] rounded-lg p-4">
-            <h4 className="text-sm font-medium text-[#E3E3E3]">{task.title}</h4>
-            <div className="flex items-center gap-2 mt-3">
-              <div className="w-5 h-5 rounded-full bg-gradient-to-br from-purple-400 to-pink-400" />
-              <span className="text-xs text-[#8E8E93]">{task.assignee}</span>
+    <div className="fixed inset-0 bg-black/80 z-50 flex items-end md:items-center justify-center p-4" onClick={onClose}>
+      <div className="bg-[#1E293B] rounded-t-lg md:rounded-lg w-full max-w-md max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+        <div className="sticky top-0 bg-[#1E293B] border-b border-[#2D3748] p-4 flex items-center justify-between">
+          <h2 className="text-lg font-bold">Task Details</h2>
+          <button onClick={onClose} className="text-2xl text-[#8E8E93] hover:text-white">&times;</button>
+        </div>
+        
+        <div className="p-4 space-y-4">
+          <div>
+            <h3 className="text-xl font-bold mb-2">{task.title}</h3>
+            <div className="flex items-center gap-2 mb-3">
+              <span className={`text-xs px-2 py-1 rounded-full ${
+                task.status === 'done' ? 'bg-green-600/20 text-green-400' :
+                task.status === 'in-progress' ? 'bg-purple-600/20 text-purple-400' :
+                'bg-blue-600/20 text-blue-400'
+              }`}>
+                {task.status.replace('-', ' ').toUpperCase()}
+              </span>
+              <span className={`text-xs ${
+                task.priority === 'high' ? 'text-red-400' :
+                task.priority === 'medium' ? 'text-yellow-400' :
+                'text-green-400'
+              }`}>
+                {task.priority.toUpperCase()} PRIORITY
+              </span>
             </div>
           </div>
-        ))}
-        {tasks.length === 0 && <p className="text-sm text-[#8E8E93] text-center py-8">No tasks</p>}
+
+          {task.description && (
+            <div>
+              <h4 className="text-sm font-semibold mb-2 text-[#8E8E93]">DESCRIPTION</h4>
+              <p className="text-sm">{task.description}</p>
+            </div>
+          )}
+
+          <div>
+            <h4 className="text-sm font-semibold mb-2 text-[#8E8E93]">ASSIGNEE</h4>
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-sm font-bold">
+                {task.assignee.charAt(0)}
+              </div>
+              <span className="text-sm">{task.assignee}</span>
+            </div>
+          </div>
+
+          {task.status === 'in-progress' && task.progress !== undefined && (
+            <div>
+              <h4 className="text-sm font-semibold mb-2 text-[#8E8E93]">PROGRESS</h4>
+              <div className="bg-[#0F1623] rounded-full h-3 mb-2">
+                <div 
+                  className="bg-purple-500 h-3 rounded-full transition-all" 
+                  style={{ width: `${task.progress}%` }}
+                ></div>
+              </div>
+              <p className="text-sm text-purple-400">{task.progress}% complete</p>
+            </div>
+          )}
+
+          {task.createdAt && (
+            <div>
+              <h4 className="text-sm font-semibold mb-2 text-[#8E8E93]">CREATED</h4>
+              <p className="text-sm">{new Date(task.createdAt).toLocaleDateString()}</p>
+            </div>
+          )}
+
+          <div className="pt-4 border-t border-[#2D3748]">
+            <button 
+              onClick={onClose}
+              className="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition-colors"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
