@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///Users/elijahsmith/OpenClaw/workspace/mission-control/app/api/taskboard/route.ts"],"sourcesContent":["import { NextResponse } from 'next/server';\n\nexport async function GET() {\n  // Temporary test - return hardcoded data to verify API works\n  const testData = {\n    tasks: [\n      { id: 1, title: 'Test Task 1', status: 'todo', assignee: 'NightCircle' },\n      { id: 2, title: 'Test Task 2', status: 'done', assignee: 'Engine' },\n    ],\n    activities: []\n  };\n  \n  return NextResponse.json(testData);\n}\n"],"names":["GET","testData","tasks","id","title","status","assignee","activities","json"],"mappings":";;;;AAAA;;AAEO,eAAeA;IACpB,6DAA6D;IAC7D,MAAMC,WAAW;QACfC,OAAO;YACL;gBAAEC,IAAI;gBAAGC,OAAO;gBAAeC,QAAQ;gBAAQC,UAAU;YAAc;YACvE;gBAAEH,IAAI;gBAAGC,OAAO;gBAAeC,QAAQ;gBAAQC,UAAU;YAAS;SACnE;QACDC,YAAY,EAAE;IAChB;IAEA,OAAO,gJAAY,CAACC,IAAI,CAACP;AAC3B"}}]
+}

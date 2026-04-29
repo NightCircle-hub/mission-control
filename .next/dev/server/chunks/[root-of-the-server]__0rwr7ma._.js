@@ -58,7 +58,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$taskboard$2e$json$2e
 ;
 async function GET() {
     try {
-        console.log(`Loaded ${__TURBOPACK__imported__module__$5b$project$5d2f$data$2f$taskboard$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].tasks?.length || 0} tasks from imported JSON`);
+        console.log(`Loaded ${__TURBOPACK__imported__module__$5b$project$5d2f$data$2f$taskboard$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].tasks?.length || 0} tasks from JSON`);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(__TURBOPACK__imported__module__$5b$project$5d2f$data$2f$taskboard$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"]);
     } catch (error) {
         console.error('Error loading taskboard:', error);
