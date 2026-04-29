@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Dashboard() {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -252,6 +253,7 @@ export default function Dashboard() {
             </div>
           </div>
         </main>
+        <BottomNav />
       </div>
     </div>
   );
@@ -352,5 +354,84 @@ function TimeRangeBtn({ children, active = false }: any) {
     }`}>
       {children}
     </button>
+  );
+}
+
+function BottomNav() {
+  const pathname = usePathname();
+  
+  const navItems = [
+    { href: '/dashboard', icon: '📊', label: 'Dashboard' },
+    { href: '/calendar', icon: '📅', label: 'Calendar' },
+    { href: '/taskboard', icon: '✅', label: 'Tasks' },
+    { href: '#more', icon: '⋯', label: 'More', isMenu: true },
+  ];
+
+  const moreItems = [
+    { href: '/team', icon: '👥', label: 'Team' },
+    { href: '/projects', icon: '📁', label: 'Projects' },
+    { href: '/docs', icon: '📚', label: 'Docs' },
+    { href: '/memory', icon: '💾', label: 'Memory' },
+  ];
+
+  const [showMore, setShowMore] = useState(false);
+
+  return (
+    <>
+      <nav className="fixed bottom-0 left-0 right-0 bg-[#0F1623] border-t border-[#1E293B] px-4 py-2 md:hidden z-50">
+        <div className="flex justify-around items-center">
+          {navItems.map((item) => (
+            item.isMenu ? (
+              <button
+                key={item.label}
+                onClick={() => setShowMore(!showMore)}
+                className="flex flex-col items-center p-2"
+              >
+                <span className="text-xl">{item.icon}</span>
+                <span className="text-xs text-gray-400 mt-1">{item.label}</span>
+              </button>
+            ) : (
+              <a
+                key={item.label}
+                href={item.href}
+                className={`flex flex-col items-center p-2 ${
+                  pathname === item.href ? 'text-blue-400' : 'text-gray-400'
+                }`}
+              >
+                <span className="text-xl">{item.icon}</span>
+                <span className="text-xs mt-1">{item.label}</span>
+              </a>
+            )
+          ))}
+        </div>
+      </nav>
+
+      {/* More Menu Modal */}
+      {showMore && (
+        <div className="fixed inset-0 bg-black/80 z-50 md:hidden" onClick={() => setShowMore(false)}>
+          <div className="absolute bottom-0 left-0 right-0 bg-[#0F1623] rounded-t-lg p-4" onClick={(e) => e.stopPropagation()}>
+            <div className="grid grid-cols-2 gap-4 mb-4">
+              {moreItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="flex flex-col items-center p-4 bg-[#1E293B] rounded-lg"
+                  onClick={() => setShowMore(false)}
+                >
+                  <span className="text-2xl mb-2">{item.icon}</span>
+                  <span className="text-sm">{item.label}</span>
+                </a>
+              ))}
+            </div>
+            <button
+              onClick={() => setShowMore(false)}
+              className="w-full py-3 bg-blue-600 rounded-lg font-medium"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
