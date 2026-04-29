@@ -213,7 +213,7 @@ function TaskCard({ task, onClick }: { task: Task; onClick: () => void }) {
         </span>
       </div>
       
-      {task.description && <p className="text-sm text-[#8E8E93] mb-3 line-clamp-2">{task.description}</p>}
+      {task.description && <p className="text-sm text-[#8E8E93] mb-3">{task.description}</p>}
       
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
