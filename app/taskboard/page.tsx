@@ -154,7 +154,16 @@ export default function Taskboard() {
               {selectedTask.createdAt && (
                 <div>
                   <h4 className="text-sm font-semibold mb-2 text-[#8E8E93]">CREATED</h4>
-                  <p className="text-sm">{new Date(selectedTask.createdAt).toLocaleDateString()}</p>
+                  <p className="text-sm">
+                    {(() => {
+                      try {
+                        const date = new Date(selectedTask.createdAt);
+                        return !isNaN(date.getTime()) ? date.toLocaleDateString() : 'Unknown';
+                      } catch {
+                        return 'Unknown';
+                      }
+                    })()}
+                  </p>
                 </div>
               )}
 
