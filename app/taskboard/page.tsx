@@ -13,7 +13,7 @@ export default function Taskboard() {
       .then(res => res.json())
       .then(data => {
         const taskList = data.tasks || [];
-        setTasks(taskList.map(t => ({
+        setTasks(taskList.map((t: any) => ({
           ...t,
           progress: t.status === 'in-progress' ? 50 : (t.status === 'done' ? 100 : 0)
         })));
