@@ -20,9 +20,16 @@ export default function Taskboard() {
   const [filter, setFilter] = useState<'all' | 'todo' | 'in-progress' | 'done'>('all');
 
   useEffect(() => {
-    fetch('/api/taskboard')
-      .then(res => res.json())
-      .then(data => {
+    const fetchTasks = async () => {
+      try {
+        console.log('Fetching tasks from /api/taskboard...');
+        const res = await fetch('/api/taskboard');
+        console.log('Response status:', res.status);
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        const data = await res.json();
+        console.log('Tasks loaded:', data.tasks?.length || 0);
         const tasksWithProgress = (data.tasks || []).map((t: any) => ({
           ...t,
           progress: t.status === 'in-progress' ? Math.floor(Math.random() * 60) + 20 : (t.status === 'done' ? 100 : 0),
@@ -31,11 +38,13 @@ export default function Taskboard() {
         }));
         setTasks(tasksWithProgress);
         setLoading(false);
-      })
-      .catch((err) => {
+      } catch (err) {
         console.error('Failed to fetch taskboard:', err);
+        setTasks([]);
         setLoading(false);
-      });
+      }
+    };
+    fetchTasks();
   }, []);
 
   const filteredTasks = filter === 'all' ? tasks : tasks.filter(t => t.status === filter);
@@ -47,6 +56,17 @@ export default function Taskboard() {
     return (
       <div className="min-h-screen bg-[#0B0F19] flex items-center justify-center pb-20">
         <p className="text-[#8E8E93]">Loading tasks...</p>
+      </div>
+    );
+  }
+
+  if (tasks.length === 0) {
+    return (
+      <div className="min-h-screen bg-[#0B0F19] text-white pb-20 flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-[#8E8E93] mb-4">No tasks found</p>
+          <button onClick={() => window.location.reload()} className="text-blue-400 hover:text-blue-300">Refresh</button>
+        </div>
       </div>
     );
   }
