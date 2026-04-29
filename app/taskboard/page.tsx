@@ -81,7 +81,7 @@ export default function Taskboard() {
       </div>
 
       {/* Task List */}
-      <div className="p-4 space-y-3">
+      <div className="p-4 space-y-3 pb-32">
         {filteredTasks.map((task) => (
           <TaskCard 
             key={task.id} 
@@ -98,73 +98,8 @@ export default function Taskboard() {
 
       {/* Task Detail Modal */}
       {selectedTask && (
-        <TaskDetail task={selectedTask} onClose={() => setSelectedTask(null)} />
-      )}
-    </div>
-  );
-}
-
-function TaskCard({ task, onClick }: { task: Task; onClick: () => void }) {
-  const priorityColors = {
-    low: 'text-green-400',
-    medium: 'text-yellow-400',
-    high: 'text-red-400',
-  };
-
-  const statusColors = {
-    'todo': 'border-l-blue-500',
-    'in-progress': 'border-l-purple-500',
-    'done': 'border-l-green-500',
-  };
-
-  return (
-    <div 
-      onClick={onClick}
-      className={`bg-[#1E293B] rounded-lg p-4 border-l-4 ${statusColors[task.status]} cursor-pointer active:bg-[#2D3748] transition-colors`}
-    >
-      <div className="flex items-start justify-between mb-2">
-        <h3 className="font-semibold flex-1">{task.title}</h3>
-        <span className={`text-xs ${priorityColors[task.priority]}`}>
-          {task.priority === 'high' ? '●' : task.priority === 'medium' ? '●' : '○'}
-        </span>
-      </div>
-      
-      {task.description && (
-        <p className="text-sm text-[#8E8E93] mb-3 line-clamp-2">{task.description}</p>
-      )}
-      
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-xs font-bold">
-            {task.assignee.charAt(0)}
-          </div>
-          <span className="text-xs text-[#8E8E93]">{task.assignee}</span>
-        </div>
-        
-        {task.status === 'in-progress' && task.progress !== undefined && (
-          <div className="flex items-center gap-2">
-            <div className="w-24 bg-[#0F1623] rounded-full h-2">
-              <div 
-                className="bg-purple-500 h-2 rounded-full transition-all" 
-                style={{ width: `${task.progress}%` }}
-              ></div>
-            </div>
-            <span className="text-xs text-purple-400">{task.progress}%</span>
-          </div>
-        )}
-        
-        {task.status === 'done' && (
-          <span className="text-xs text-green-400">✓ Complete</span>
-        )}
-      </div>
-    </div>
-  );
-}
-
-function TaskDetail({ task, onClose }: { task: Task; onClose: () => void }) {
-  return (
-    <div className="fixed inset-0 bg-black/80 z-50 flex items-end md:items-center justify-center p-4" onClick={onClose}>
-      <div className="bg-[#1E293B] rounded-t-lg md:rounded-lg w-full max-w-md max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+        <div className="fixed inset-0 bg-black/80 z-[60] flex items-end md:items-center justify-center p-4" onClick={onClose}>
+          <div className="bg-[#1E293B] rounded-t-lg md:rounded-lg w-full max-w-md max-h-[90vh] overflow-y-auto mb-16 md:mb-0" onClick={(e) => e.stopPropagation()}>
         <div className="sticky top-0 bg-[#1E293B] border-b border-[#2D3748] p-4 flex items-center justify-between">
           <h2 className="text-lg font-bold">Task Details</h2>
           <button onClick={onClose} className="text-2xl text-[#8E8E93] hover:text-white">&times;</button>
@@ -237,6 +172,63 @@ function TaskDetail({ task, onClose }: { task: Task; onClose: () => void }) {
             </button>
           </div>
         </div>
+      </div>
+    </div>
+  );
+}
+
+function TaskCard({ task, onClick }: { task: Task; onClick: () => void }) {
+  const priorityColors = {
+    low: 'text-green-400',
+    medium: 'text-yellow-400',
+    high: 'text-red-400',
+  };
+
+  const statusColors = {
+    'todo': 'border-l-blue-500',
+    'in-progress': 'border-l-purple-500',
+    'done': 'border-l-green-500',
+  };
+
+  return (
+    <div 
+      onClick={onClick}
+      className={`bg-[#1E293B] rounded-lg p-4 border-l-4 ${statusColors[task.status]} cursor-pointer active:bg-[#2D3748] transition-colors`}
+    >
+      <div className="flex items-start justify-between mb-2">
+        <h3 className="font-semibold flex-1">{task.title}</h3>
+        <span className={`text-xs ${priorityColors[task.priority]}`}>
+          {task.priority === 'high' ? '●' : task.priority === 'medium' ? '●' : '○'}
+        </span>
+      </div>
+      
+      {task.description && (
+        <p className="text-sm text-[#8E8E93] mb-3 line-clamp-2">{task.description}</p>
+      )}
+      
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-xs font-bold">
+            {task.assignee.charAt(0)}
+          </div>
+          <span className="text-xs text-[#8E8E93]">{task.assignee}</span>
+        </div>
+        
+        {task.status === 'in-progress' && task.progress !== undefined && (
+          <div className="flex items-center gap-2">
+            <div className="w-24 bg-[#0F1623] rounded-full h-2">
+              <div 
+                className="bg-purple-500 h-2 rounded-full transition-all" 
+                style={{ width: `${task.progress}%` }}
+              ></div>
+            </div>
+            <span className="text-xs text-purple-400">{task.progress}%</span>
+          </div>
+        )}
+        
+        {task.status === 'done' && (
+          <span className="text-xs text-green-400">✓ Complete</span>
+        )}
       </div>
     </div>
   );
