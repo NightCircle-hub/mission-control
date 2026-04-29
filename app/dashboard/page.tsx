@@ -52,6 +52,10 @@ export default function Dashboard() {
       </div>
 
       <div className="flex">
+        {/* Update Banner */}
+        <div className="w-full bg-green-600 text-white text-center py-2 text-sm font-bold">
+          ✅ MOBILE NAV ADDED!
+        </div>
         {/* Sidebar */}
         <aside className="w-64 bg-[#0F1623] border-r border-[#1E293B] min-h-screen p-4">
           <div className="flex items-center gap-3 mb-8 px-2">
